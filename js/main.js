@@ -35,8 +35,15 @@ async function init() {
   document.addEventListener('keydown', () => unlockAudio(), { capture: true });
   window.addEventListener('hashchange', route);
   route();
-  const sw = 'serviceWorker' in navigator;
-  if (sw && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
+  if ('serviceWorker' in navigator && location.protocol === 'https:') {
+    const hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register('sw.js').then((reg) => { try { reg.update(); } catch (e) {} }).catch(() => {});
+    let reloaded = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      // neue Version aktiv: einmal neu laden, damit keine veralteten Dateien aus dem Cache kommen
+      if (hadController && !reloaded) { reloaded = true; location.reload(); }
+    });
+  }
 }
 
 init();

@@ -53,14 +53,25 @@ export async function loadInstrument(inst, art = 'sus', onProgress) {
     await Promise.all(
       notes.map(async (midi) => {
         const url = `${BASE}${inst}/${realArt}/${midi}.ogg`;
-        const res = await fetch(url);
-        const ab = await res.arrayBuffer();
-        const buf = await ctx.decodeAudioData(ab);
-        map.set(midi, buf);
+        const tryLoad = async (opts) => {
+          const res = await fetch(url, opts);
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return ctx.decodeAudioData(await res.arrayBuffer());
+        };
+        try {
+          map.set(midi, await tryLoad({}));
+        } catch (e1) {
+          try {
+            map.set(midi, await tryLoad({ cache: 'reload' }));
+          } catch (e2) {
+            console.warn('Sample nicht ladbar, wird übersprungen:', url, e2.message);
+          }
+        }
         done++;
         if (onProgress) onProgress(done / notes.length);
       })
     );
+    if (map.size === 0) throw new Error(`Keine Klänge für ${inst} (${realArt}) ladbar. Bitte Seite neu laden.`);
     buffers.set(key, map);
     pending.delete(key);
     return map;
