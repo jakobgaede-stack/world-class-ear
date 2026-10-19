@@ -75,6 +75,9 @@ function injectOne(ex, parts, kind, partIdx, usedIdx) {
     const other = soundingPcs(parts, n.o, partIdx);
     const otherMidis = new Set(other.midis);
     const pcN = pc(n.m);
+    const flats = !!ex.key?.flats;
+    const right = spellingToHelmholtz(n.spelling);
+    const wrongName = (m) => midiToHelmholtz(m, { flats });
     const label = (txt) => `${PART_DE[part.name] || part.name}, Takt ${measureOf(ex, n.o)}: ${txt}`;
     if (kind === 'pitch_chrom') {
       const dirs = [1, -1].filter((d) => !pcs.has(pc(n.m + d)) && !otherMidis.has(n.m + d));
@@ -82,7 +85,7 @@ function injectOne(ex, parts, kind, partIdx, usedIdx) {
       const d = pick(dirs);
       const old = n.m;
       n.m += d;
-      return { type: 'pitch', kind, part: partIdx, idx: n.idx, i, t: n.o, dir: d > 0 ? 'hoch' : 'tief', label: label(`${midiToHelmholtz(old)} statt ${midiToHelmholtz(n.m)} gespielt (Halbton ${d > 0 ? 'zu hoch' : 'zu tief'}, tonartfremd)`) };
+      return { type: 'pitch', kind, part: partIdx, idx: n.idx, i, t: n.o, dir: d > 0 ? 'hoch' : 'tief', label: label(`gespielt ${wrongName(n.m)}, richtig ${right} (Halbton ${d > 0 ? 'zu hoch' : 'zu tief'}, tonartfremd)`) };
     }
     if (kind === 'pitch_diat') {
       const opts = [1, 2, -1, -2].filter((d) => pcs.has(pc(n.m + d)) && !otherMidis.has(n.m + d) && n.m + d >= rlo - 2 && n.m + d <= rhi + 2);
@@ -90,7 +93,7 @@ function injectOne(ex, parts, kind, partIdx, usedIdx) {
       const d = pick(opts);
       const old = n.m;
       n.m += d;
-      return { type: 'pitch', kind, part: partIdx, idx: n.idx, i, t: n.o, dir: d > 0 ? 'hoch' : 'tief', label: label(`Nachbarton ${midiToHelmholtz(n.m)} statt ${midiToHelmholtz(old)} (leitereigen, ${d > 0 ? 'zu hoch' : 'zu tief'})`) };
+      return { type: 'pitch', kind, part: partIdx, idx: n.idx, i, t: n.o, dir: d > 0 ? 'hoch' : 'tief', label: label(`gespielt ${wrongName(n.m)}, richtig ${right} (leitereigener Nachbarton, ${d > 0 ? 'zu hoch' : 'zu tief'})`) };
     }
     if (kind === 'pitch_chord') {
       const choices = [...other.pcs].filter((p) => p !== pcN);
@@ -102,7 +105,7 @@ function injectOne(ex, parts, kind, partIdx, usedIdx) {
       if (otherMidis.has(m2) || m2 < rlo - 2 || m2 > rhi + 2) continue;
       const old = n.m;
       n.m = m2;
-      return { type: 'pitch', kind, part: partIdx, idx: n.idx, i, t: n.o, dir: delta > 0 ? 'hoch' : 'tief', label: label(`anderer Akkordton ${midiToHelmholtz(n.m)} statt ${midiToHelmholtz(old)}`) };
+      return { type: 'pitch', kind, part: partIdx, idx: n.idx, i, t: n.o, dir: delta > 0 ? 'hoch' : 'tief', label: label(`gespielt ${wrongName(n.m)}, richtig ${right} (anderer Akkordton)`) };
     }
     if (kind === 'accidental') {
       const acc = /^[A-G](#+|-+)/.exec(n.spelling);
@@ -111,14 +114,14 @@ function injectOne(ex, parts, kind, partIdx, usedIdx) {
       if (otherMidis.has(n.m + d)) continue;
       const old = n.m;
       n.m += d;
-      return { type: 'pitch', kind, part: partIdx, idx: n.idx, i, t: n.o, dir: d > 0 ? 'hoch' : 'tief', label: label(`Vorzeichen ignoriert: ${midiToHelmholtz(n.m)} statt ${midiToHelmholtz(old)}`) };
+      return { type: 'pitch', kind, part: partIdx, idx: n.idx, i, t: n.o, dir: d > 0 ? 'hoch' : 'tief', label: label(`gespielt ${wrongName(n.m)}, richtig ${right} (Vorzeichen ignoriert)`) };
     }
     if (kind === 'octave') {
       const dirs = [12, -12].filter((d) => n.m + d >= rlo - 5 && n.m + d <= rhi + 5);
       if (!dirs.length) continue;
       const d = pick(dirs);
       n.m += d;
-      return { type: 'octave', kind, part: partIdx, idx: n.idx, i, t: n.o, dir: d > 0 ? 'hoch' : 'tief', label: label(`eine Oktave ${d > 0 ? 'höher' : 'tiefer'} gespielt`) };
+      return { type: 'octave', kind, part: partIdx, idx: n.idx, i, t: n.o, dir: d > 0 ? 'hoch' : 'tief', label: label(`${right} eine Oktave ${d > 0 ? 'höher' : 'tiefer'} gespielt`) };
     }
     if (kind === 'rhythm') {
       const next = notes[i + 1];
@@ -427,7 +430,7 @@ const chordErrSkill = {
           correct,
           truthKey,
           answerKey: answer,
-          truthLabel: hasError ? `${members[wrongIdx]} (${midiToHelmholtz(v.midis[wrongIdx], { flats })}) wurde ${dir > 0 ? 'einen Halbton zu hoch' : 'einen Halbton zu tief'} gespielt` : 'Akkord war korrekt',
+          truthLabel: hasError ? `${members[wrongIdx]}: gespielt ${midiToHelmholtz(midis[wrongIdx], { flats })}, richtig ${midiToHelmholtz(v.midis[wrongIdx], { flats })} (${dir > 0 ? 'Halbton zu hoch' : 'Halbton zu tief'})` : 'Akkord war korrekt',
           answerLabel: answer === 'none' ? 'korrekt' : answer,
           falseAlarm: !hasError && answer !== 'none',
           playTruth: () => play(eventsRight),

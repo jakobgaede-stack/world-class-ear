@@ -58,12 +58,15 @@ export function excerpt(chorale, start, end) {
 }
 
 /** Phrasen 1 bis n ab einer zufälligen Phrase (zusammenhängend) */
-export function randomPhraseSpan(chorale, nPhrases = 1) {
+export function randomPhraseSpan(chorale, nPhrases = 1, minQuarters = 8) {
   const ph = chorale.phrases;
   const maxStart = Math.max(0, ph.length - nPhrases);
   const i = Math.floor(Math.random() * (maxStart + 1));
-  const sel = ph.slice(i, i + nPhrases);
-  return { start: sel[0].start, end: sel[sel.length - 1].end, phraseIndex: i };
+  let n = nPhrases;
+  // zu kurze Ausschnitte (z. B. Auftakt plus ein Takt) um eine Phrase verlängern
+  while (i + n < ph.length && ph[i + n - 1].end - ph[i].start < minQuarters) n++;
+  const sel = ph.slice(i, i + n);
+  return { start: sel[0].start, end: sel[sel.length - 1].end, phraseIndex: i, nPhrases: n };
 }
 
 /** Tonklassen, die zur Zeit t in den Stimmen (außer partIdx) klingen */

@@ -39,50 +39,18 @@ export function renderExcerpt(container, ex, opts = {}) {
   const nParts = partIdxs.length;
   const [tsNum, tsDen] = ex.timeSig.split('/').map(Number);
   const keySpec = fifthsToVexKey(ex.chorale.keySig || 0);
-  // Taktbreiten
-  const measureInfo = ex.measures.map((m, mi) => {
-    let maxTick = 1;
-    for (const pi of partIdxs) {
-      const notes = ex.parts[pi].notes.filter((n) => n.o >= m.offset - 1e-6 && n.o < m.end - 1e-6);
-      maxTick = Math.max(maxTick, notes.length);
-    }
-    const quarters = m.end - m.offset;
-    const base = 34 + Math.max(maxTick, quarters) * 30;
-    return { ...m, width: base + (mi === 0 ? 86 : 0) };
-  });
-  const totalWidth = LEFT + measureInfo.reduce((s, m) => s + m.width, 0) + 16;
-  const height = TOP + STAFF_GAP * nParts + 20;
-  const maxWidth = opts.maxWidth || container.clientWidth || 900;
-  const scale = Math.min(1, Math.max(0.55, maxWidth / totalWidth));
-  const renderer = new Renderer(container, Renderer.Backends.SVG);
-  renderer.resize(Math.ceil(totalWidth * scale), Math.ceil(height * scale));
-  const ctx = renderer.getContext();
-  ctx.scale(scale, scale);
+  // Durchgang 1: Stimmen je Takt aufbauen und Mindestbreite bestimmen
   const noteBoxes = [];
   const marks = opts.marks || [];
-  const allStaves = [];
-  const tieQueue = []; // {part, firstNote, lastNote}
+  const tieQueue = []; // {firstNote, lastNote}
   const pendingTie = {}; // part -> StaveNote, die eine Bindung beginnt
-  let x = LEFT;
-  measureInfo.forEach((m, mi) => {
-    const staves = [];
+  const built = ex.measures.map((m, mi) => {
     const voices = [];
     const beamsAll = [];
-    partIdxs.forEach((pi, row) => {
+    partIdxs.forEach((pi) => {
       const part = ex.parts[pi];
-      const y = TOP + row * STAFF_GAP;
-      const stave = new Stave(x, y, m.width);
       const isTenor = part.name === 'T';
       const clefName = part.name === 'B' || (part.clef === 'bass' && part.name !== 'T') ? 'bass' : 'treble';
-      if (mi === 0) {
-        if (isTenor && clefName === 'treble') stave.addClef('treble', 'default', '8vb');
-        else stave.addClef(clefName);
-        stave.addKeySignature(keySpec);
-        stave.addTimeSignature(ex.timeSig);
-      }
-      stave.setContext(ctx).draw();
-      staves.push(stave);
-      // Noten des Takts
       const notes = part.notes.filter((n) => n.o >= m.offset - 1e-6 && n.o < m.end - 1e-6);
       const tickables = [];
       let cursor = m.offset;
@@ -110,7 +78,6 @@ export function renderExcerpt(container, ex, opts = {}) {
           if (prev) tieQueue.push({ firstNote: prev, lastNote: sn });
           prev = sn;
         });
-        // Bindungen aus den Daten
         if (pendingTie[pi]) {
           tieQueue.push({ firstNote: pendingTie[pi], lastNote: tickables[tickables.length - durs.length] });
           pendingTie[pi] = null;
@@ -122,26 +89,59 @@ export function renderExcerpt(container, ex, opts = {}) {
       const voice = new Voice({ numBeats: tsNum, beatValue: tsDen }).setMode(Voice.Mode.SOFT);
       voice.addTickables(tickables);
       Accidental.applyAccidentals([voice], keySpec);
-      voices.push({ voice, stave });
-      const beams = Beam.generateBeams(tickables.filter((t) => !t.isRest()), { maintainStemDirections: false });
-      beamsAll.push(...beams);
+      voices.push({ voice, clefName, isTenor, pi });
+      beamsAll.push(...Beam.generateBeams(tickables.filter((t) => !t.isRest()), { maintainStemDirections: false }));
     });
-    // gemeinsame Formatierung des Takts
     const fmt = new Formatter();
     for (const v of voices) fmt.joinVoices([v.voice]);
-    const avail = m.width - (mi === 0 ? 96 : 24);
-    fmt.format(voices.map((v) => v.voice), Math.max(40, avail));
-    for (const v of voices) v.voice.draw(ctx, v.stave);
-    for (const b of beamsAll) b.setContext(ctx).draw();
-    // Verbindungen links
+    const minW = fmt.preCalculateMinTotalWidth(voices.map((v) => v.voice));
+    const quarters = m.end - m.offset;
+    const noteWidth = Math.max(minW * 1.3, quarters * 38, 60);
+    return { m, mi, voices, beamsAll, fmt, noteWidth };
+  });
+  // Breite der Vorzeichnung (Schlüssel, Tonart, Taktart) des ersten Takts messen
+  const probe = new Stave(0, 0, 400);
+  probe.addClef('treble').addKeySignature(keySpec).addTimeSignature(ex.timeSig);
+  const modW = probe.getNoteStartX() - probe.getX();
+  const measureInfo = built.map((b) => ({ ...b.m, width: Math.round(b.noteWidth + 22 + (b.mi === 0 ? modW + 12 : 14)) }));
+  const totalWidth = LEFT + measureInfo.reduce((s, m) => s + m.width, 0) + 16;
+  const height = TOP + STAFF_GAP * nParts + 20;
+  const maxWidth = opts.maxWidth || container.clientWidth || 900;
+  const scale = Math.min(1, Math.max(0.55, maxWidth / totalWidth));
+  const renderer = new Renderer(container, Renderer.Backends.SVG);
+  renderer.resize(Math.ceil(totalWidth * scale), Math.ceil(height * scale));
+  const ctx = renderer.getContext();
+  ctx.scale(scale, scale);
+  const allStaves = [];
+  let x = LEFT;
+  // Durchgang 2: Systeme zeichnen, Stimmen formatieren
+  built.forEach((b, mi) => {
+    const m = measureInfo[mi];
+    const staves = [];
+    b.voices.forEach((v, row) => {
+      const y = TOP + row * STAFF_GAP;
+      const stave = new Stave(x, y, m.width);
+      if (mi === 0) {
+        if (v.isTenor && v.clefName === 'treble') stave.addClef('treble', 'default', '8vb');
+        else stave.addClef(v.clefName);
+        stave.addKeySignature(keySpec);
+        stave.addTimeSignature(ex.timeSig);
+      }
+      stave.setContext(ctx).draw();
+      staves.push(stave);
+      v.stave = stave;
+    });
+    const s0 = staves[0];
+    const justify = Math.max(40, s0.getNoteEndX() - s0.getNoteStartX() - 24);
+    b.fmt.format(b.voices.map((v) => v.voice), justify);
+    for (const v of b.voices) v.voice.draw(ctx, v.stave);
+    for (const bm of b.beamsAll) bm.setContext(ctx).draw();
     if (nParts > 1) {
-      const conn = new StaveConnector(staves[0], staves[nParts - 1]);
-      conn.setType(mi === 0 ? StaveConnector.type.BRACKET : StaveConnector.type.SINGLE_LEFT).setContext(ctx).draw();
+      new StaveConnector(staves[0], staves[nParts - 1]).setType(mi === 0 ? StaveConnector.type.BRACKET : StaveConnector.type.SINGLE_LEFT).setContext(ctx).draw();
       if (mi === 0) new StaveConnector(staves[0], staves[nParts - 1]).setType(StaveConnector.type.SINGLE_LEFT).setContext(ctx).draw();
     }
     allStaves.push(staves);
-    // Notenboxen sammeln
-    for (const v of voices) {
+    for (const v of b.voices) {
       for (const t of v.voice.getTickables()) {
         if (!t._wce) continue;
         const bb = t.getBoundingBox();

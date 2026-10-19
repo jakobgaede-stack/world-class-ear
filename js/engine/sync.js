@@ -66,7 +66,13 @@ export function mergeRemote(remote) {
 }
 
 async function request(method, body) {
-  const res = await fetch(SYNC_URL, { method, headers: { 'X-WCE-Key': state.settings.syncKey, 'Content-Type': 'application/json' }, body });
+  let res;
+  try {
+    res = await fetch(SYNC_URL, { method, headers: { 'X-WCE-Key': state.settings.syncKey, 'Content-Type': 'application/json' }, body });
+  } catch (e) {
+    throw new Error('Sync-Server nicht erreichbar (kein Netz, oder dieser Browser blockiert die Verbindung; in Chrome erneut versuchen)');
+  }
+  if (res.status === 401) throw new Error('Sync-Schlüssel zu kurz');
   if (!res.ok) throw new Error('Sync-Server antwortet mit ' + res.status);
   return res.json();
 }
