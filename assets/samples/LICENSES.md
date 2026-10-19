@@ -8,7 +8,7 @@ copy of a source file. `manifest.json` lists the source and licence per instrume
 ## 1. VSCO-2 Community Edition (VSCO 2 CE) - CC0 1.0
 
 Instruments: flute, oboe, clarinet, bassoon, horn, trumpet, trombone, tuba, violin, viola,
-cello, contrabass, harp, piano (Upright Piano).
+cello, contrabass, harp, piano (Upright Piano), organ (pipe organ, `Keys/Organ/Quiet`).
 
 - Creators: Versilian Studios LLC / Sam Gossner (recording), Ivy Audio / Simon Dalzell
   (recording), sample cutting by Elan Hickler (Soundemote).
@@ -41,8 +41,7 @@ Suggested credit line: "Orchestral samples: VSCO 2 Community Edition by Versilia
 
 ## 2. FluidR3_GM SoundFont - MIT, rendered to MP3 by midi-js-soundfonts - CC BY 3.0
 
-Instruments: organ (GM 20 "Church Organ"), choir (GM 53 "Choir Aahs"), strings_ens
-(GM 49 "String Ensemble 1").
+Instruments: choir (GM 53 "Choir Aahs"), strings_ens (GM 49 "String Ensemble 1").
 
 - SoundFont: FluidR3_GM.sf2 by Frank Wen, Copyright (c) 2000-2002, 2008 Frank Wen.
   Licence: **MIT**. The upstream README states "I hereby release Fluid under the MIT
@@ -59,8 +58,8 @@ Instruments: organ (GM 20 "Church Organ"), choir (GM 53 "Choir Aahs"), strings_e
   at the hard end of each render (about 3.1 s); loudness-normalised. The choir preset is
   tuned 10-45 cents flat/sharp depending on the zone in the source render; every choir note
   was retuned by its measured offset (see `tune_corrections.json` in the build scripts) so
-  that the pitch centre of the detuned chorus sits on the nominal pitch. Organ and string
-  ensemble were within +-10 cents and were left as rendered.
+  that the pitch centre of the detuned chorus sits on the nominal pitch. The string ensemble
+  was within +-10 cents and was left as rendered.
 
 MIT licence text for FluidR3_GM:
 
@@ -81,14 +80,15 @@ MIT licence text for FluidR3_GM:
     CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
     THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Suggested credit line: "Organ, choir and string ensemble: FluidR3_GM SoundFont by Frank Wen
+Suggested credit line: "Choir and string ensemble: FluidR3_GM SoundFont by Frank Wen
 (MIT), pre-rendered by Benjamin Gleitzman / midi-js-soundfonts (CC BY 3.0)."
 
 ## 3. Not used
 
 - Salamander Grand Piano (CC BY 3.0) was not needed because VSCO-2 CE contains a CC0
   upright piano.
-- FluidR3 `acoustic_grand_piano` was downloaded as a fallback but not included.
+- FluidR3 `acoustic_grand_piano` and `church_organ` were downloaded but not included (the
+  organ comes from VSCO-2 CE instead).
 
 ## Summary
 
