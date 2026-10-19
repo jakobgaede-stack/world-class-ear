@@ -4,6 +4,7 @@ import { loadManifest } from './audio/sampler.js';
 import { unlockAudio, setMasterVolume } from './audio/context.js';
 import { viewToday, viewPractice, viewStats, viewKnowledge, viewSettings } from './ui/views.js';
 import { el } from './modules/common.js';
+import { initSync } from './engine/sync.js';
 
 const ROUTES = {
   heute: viewToday,
@@ -25,6 +26,7 @@ function route() {
 
 async function init() {
   await loadState();
+  try { await initSync(); } catch (e) { console.warn('Sync', e); }
   try { await loadManifest(); } catch (e) { console.error('Manifest fehlt', e); }
   if (state.settings.volume !== undefined) {
     document.addEventListener('pointerdown', () => { try { setMasterVolume(state.settings.volume); } catch (e) {} }, { once: true });

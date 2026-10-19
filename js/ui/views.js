@@ -8,6 +8,7 @@ import { runBlock, blockSummary, runPassive, stageLabel, showCard } from './runn
 import { allCards } from '../knowledge/cards.js';
 import { setMasterVolume } from '../audio/context.js';
 import { ENSEMBLES } from '../audio/ensembles.js';
+import { pull, push, syncStatus, syncEnabled } from '../engine/sync.js';
 
 function h(container, title, sub) {
   container.appendChild(el('h1', { text: title }));
@@ -265,6 +266,26 @@ export function viewSettings(container) {
   hold.addEventListener('change', () => { state.settings.holdMode = hold.value; saveState(); });
   field('Akkorde halten bis zur Antwort', hold);
   container.appendChild(box);
+  const sync = el('div', { class: 'panel' });
+  sync.appendChild(el('h3', { text: 'Sync zwischen Geräten' }));
+  sync.appendChild(el('p', { class: 'small muted', text: 'Gib auf jedem Gerät denselben Sync-Schlüssel ein (mindestens 6 Zeichen, frei wählbar). Der Fortschritt wird dann automatisch zusammengeführt; Ablage: Cloudflare D1, kostenloser Tarif.' }));
+  const keyIn = el('input', { type: 'text', class: 'num', style: 'width:260px', value: state.settings.syncKey || '', placeholder: 'Sync-Schlüssel' });
+  const status = el('span', { class: 'small muted', text: state.settings.syncLast ? 'zuletzt ' + new Date(state.settings.syncLast).toLocaleString('de-AT') : (syncEnabled() ? 'noch nicht synchronisiert' : 'aus') });
+  syncStatus((m) => { status.textContent = m; });
+  const srow = el('div', { class: 'row' });
+  srow.appendChild(keyIn);
+  srow.appendChild(el('button', { class: 'btn primary', text: 'Speichern und abgleichen', onclick: async () => {
+    state.settings.syncKey = keyIn.value.trim();
+    saveState();
+    if (!syncEnabled()) { status.textContent = 'Schlüssel zu kurz (mindestens 6 Zeichen)'; return; }
+    status.textContent = 'hole …';
+    const ok = await pull();
+    if (ok) { status.textContent = 'schicke …'; await push(); }
+  } }));
+  srow.appendChild(el('button', { class: 'btn ghost', text: 'Sync aus', onclick: () => { state.settings.syncKey = ''; saveState(); keyIn.value = ''; status.textContent = 'aus'; } }));
+  srow.appendChild(status);
+  sync.appendChild(srow);
+  container.appendChild(sync);
   const data = el('div', { class: 'panel' });
   data.appendChild(el('h3', { text: 'Daten' }));
   data.appendChild(el('p', { class: 'small muted', text: 'Der Fortschritt liegt im Browser dieses Geräts. Export als JSON-Datei zur Sicherung oder zum Übertragen auf ein anderes Gerät.' }));
