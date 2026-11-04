@@ -1,0 +1,11173 @@
+{
+ "movements": [
+  {
+   "workId": "haydn-99",
+   "movement": 1,
+   "file": "sym099a.krn",
+   "measures": 202,
+   "excerpts": 25,
+   "dropped": 0,
+   "bytes": 551627,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "Clarinetto 1 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "Clarinetto 2 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.83
+    },
+    {
+     "label": "Corno 1 in Eb",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.73
+    },
+    {
+     "label": "Corno 2 in Eb",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "Tromba 1 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.78
+    },
+    {
+     "label": "Tromba 2 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.72
+    },
+    {
+     "label": "Timpani in Eb, Bb",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.73
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Basso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       808.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    }
+   ]
+  },
+  {
+   "workId": "haydn-99",
+   "movement": 2,
+   "file": "sym099b.krn",
+   "measures": 98,
+   "excerpts": 12,
+   "dropped": 0,
+   "bytes": 298661,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "tuplets"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Clarinetto 1 in C",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Clarinetto 2 in C",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Corno 1 in G",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Corno 2 in G",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.83
+    },
+    {
+     "label": "Tromba 1 in C",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Tromba 2 in C",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.99
+    },
+    {
+     "label": "Timpani in C, G",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Basso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       294.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.99
+    }
+   ]
+  },
+  {
+   "workId": "haydn-99",
+   "movement": 3,
+   "file": "sym099c.krn",
+   "measures": 124,
+   "excerpts": 13,
+   "dropped": 0,
+   "bytes": 155972,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "splitMeasures",
+    "transposedToSounding"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Clarinetto 1 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Clarinetto 2 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Corno 1 in Eb",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "Corno 2 in Eb",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "Tromba 1 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Tromba 2 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Timpani in Eb, Bb",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Basso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       354.0,
+       -12
+      ]
+     ],
+     "reason": "coincides with the cello (median diff +0): octave down",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "haydn-99",
+   "movement": 4,
+   "file": "sym099d.krn",
+   "measures": 274,
+   "excerpts": 34,
+   "dropped": 0,
+   "bytes": 486490,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "splitMeasures"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Clarinetto 1 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Clarinetto 2 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Corno 1 in Eb",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.79
+    },
+    {
+     "label": "Corno 2 in Eb",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "Tromba 1 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Tromba 2 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "Timpani in Eb, Bb",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.7
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Basso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       544.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "haydn-100",
+   "movement": 1,
+   "file": "sym100a.krn",
+   "measures": 289,
+   "excerpts": 36,
+   "dropped": 0,
+   "bytes": 563394,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.99
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Corno 1 in G",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Corno 2 in G",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Tromba 1 in C",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Tromba 2 in C",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Timpani in G, D",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1156.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "haydn-100",
+   "movement": 2,
+   "file": "sym100b.krn",
+   "measures": 186,
+   "excerpts": 23,
+   "dropped": 0,
+   "bytes": 373304,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "skippedPart:Gran Cassa",
+    "skippedPart:Piatti",
+    "skippedPart:Triangolo",
+    "transposedToSounding",
+    "tuplets"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "Clarinetto 1 in C",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "Clarinetto 2 in C",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Corno 1 in C (basso)",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       -12
+      ]
+     ],
+     "reason": "C horn read as basso (an octave below the encoded transposition)",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Corno 2 in C (basso)",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Tromba 1 in C",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Tromba 2 in C",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Timpani in C, G",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       744.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.99
+    }
+   ]
+  },
+  {
+   "workId": "haydn-100",
+   "movement": 3,
+   "file": "sym100c.krn",
+   "measures": 86,
+   "excerpts": 10,
+   "dropped": 0,
+   "bytes": 172427,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "splitMeasures",
+    "transposedToSounding",
+    "tuplets",
+    "unnumberedMeasures"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Corno 1 in C",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       -12
+      ]
+     ],
+     "reason": "C horn read as basso (an octave below the encoded transposition)",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Corno 2 in C",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       -12
+      ]
+     ],
+     "reason": "C horn read as basso (an octave below the encoded transposition)",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Tromba 1 in C",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Tromba 2 in C",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Timpani in G, D",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       243.75,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    }
+   ]
+  },
+  {
+   "workId": "haydn-100",
+   "movement": 4,
+   "file": "sym100d.krn",
+   "measures": 337,
+   "excerpts": 41,
+   "dropped": 0,
+   "bytes": 549707,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "contrabassDoubling",
+    "skippedPart:Gran Cassa",
+    "skippedPart:Piatti",
+    "skippedPart:Triangolo",
+    "splitMeasures",
+    "unnumberedMeasures"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.78
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Corno 1 in G",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "Corno 2 in G",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Tromba 1 in C",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Tromba 2 in C",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Timpani in G, D",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello/Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello (doubling)",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1005.0,
+       0
+      ]
+     ],
+     "reason": "",
+     "pcRateAfter": null
+    }
+   ]
+  },
+  {
+   "workId": "haydn-101",
+   "movement": 1,
+   "file": "sym101a.krn",
+   "measures": 352,
+   "excerpts": 44,
+   "dropped": 0,
+   "bytes": 641623,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "unnumberedMeasures"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Clarinetto 1 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Clarinetto 2 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Corno 1 in D",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Corno 2 in D",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Tromba 1 in D",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Tromba 2 in D",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Timpani in D, A",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1053.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    }
+   ]
+  },
+  {
+   "workId": "haydn-101",
+   "movement": 2,
+   "file": "sym101b.krn",
+   "measures": 152,
+   "excerpts": 19,
+   "dropped": 0,
+   "bytes": 392028,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "tuplets"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.61
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.65
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.7
+    },
+    {
+     "label": "Clarinetto 1 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "Clarinetto 2 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.68
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Corno 1 in G",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.67
+    },
+    {
+     "label": "Corno 2 in G",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Tromba 1 in C",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "Tromba 2 in C",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Timpani in D, G",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "haydn-101",
+   "movement": 3,
+   "file": "sym101c.krn",
+   "measures": 164,
+   "excerpts": 18,
+   "dropped": 0,
+   "bytes": 258349,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "contrabassDoubling",
+    "emptyMeasureDropped",
+    "splitMeasures"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Clarinetto 1 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Clarinetto 2 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.99
+    },
+    {
+     "label": "Corno 1 in D",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Corno 2 in D",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Tromba 1 in D",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Tromba 2 in D",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Timpani in D, A",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello e Contrabasso",
+     "inst": "cello",
+     "name": "Violoncello/Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello e Contrabasso (doubling)",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       480.0,
+       0
+      ]
+     ],
+     "reason": "",
+     "pcRateAfter": null
+    }
+   ]
+  },
+  {
+   "workId": "haydn-101",
+   "movement": 4,
+   "file": "sym101d.krn",
+   "measures": 281,
+   "excerpts": 35,
+   "dropped": 0,
+   "bytes": 535288,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "unnumberedMeasures"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.83
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Clarinetto 1 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Clarinetto 2 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Corno 1 in D",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Corno 2 in D",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Tromba 1 in D",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Tromba 2 in D",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Timpani in D, A",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.83
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1124.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    }
+   ]
+  },
+  {
+   "workId": "haydn-102",
+   "movement": 1,
+   "file": "sym102a.krn",
+   "measures": 313,
+   "excerpts": 39,
+   "dropped": 0,
+   "bytes": 634065,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "kernAccidentalsFixed:368",
+    "splitMeasures",
+    "transposedToSounding"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Corno 1 in Bb (basso)",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -14,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       -14
+      ]
+     ],
+     "reason": "pitch-class evidence (0.80 vs 0.20 for expected +0)",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "Corno 2 in Bb (basso)",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -14,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       -14
+      ]
+     ],
+     "reason": "pitch-class evidence (0.80 vs 0.17 for expected +0)",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "Tromba 1 in Bb",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.79
+    },
+    {
+     "label": "Tromba 2 in Bb",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "Timpani in Bb, F",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1248.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "haydn-102",
+   "movement": 2,
+   "file": "sym102b.krn",
+   "measures": 60,
+   "excerpts": 7,
+   "dropped": 0,
+   "bytes": 203219,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "contrabassDoubling",
+    "tuplets"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.99
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Corno 1 in F",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Corno 2 in F",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Tromba 1 in C",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "Tromba 2 in C",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "Timpani in C, F",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello - Solo",
+     "inst": "cello",
+     "name": "Violoncello (Solo)",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Bassi continui",
+     "inst": "cello",
+     "name": "Violoncello/Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Bassi continui (doubling)",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       180.0,
+       0
+      ]
+     ],
+     "reason": "",
+     "pcRateAfter": null
+    }
+   ]
+  },
+  {
+   "workId": "haydn-102",
+   "movement": 3,
+   "file": "sym102c.krn",
+   "measures": 110,
+   "excerpts": 13,
+   "dropped": 0,
+   "bytes": 160000,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "contrabassDoubling",
+    "emptyMeasureDropped",
+    "kernAccidentalsFixed:138",
+    "splitMeasures",
+    "transposedToSounding"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Corno 1 in Bb (basso)",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -14,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       -14
+      ]
+     ],
+     "reason": "pitch-class evidence (0.90 vs 0.07 for expected +0)",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Corno 2 in Bb (basso)",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -14,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       -14
+      ]
+     ],
+     "reason": "pitch-class evidence (0.88 vs 0.00 for expected +0)",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Tromba 1 in Bb",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Tromba 2 in Bb",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Timpani in Bb, F",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello e Basso",
+     "inst": "cello",
+     "name": "Violoncello/Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello e Basso (doubling)",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       318.0,
+       0
+      ]
+     ],
+     "reason": "",
+     "pcRateAfter": null
+    }
+   ]
+  },
+  {
+   "workId": "haydn-102",
+   "movement": 4,
+   "file": "sym102d.krn",
+   "measures": 315,
+   "excerpts": 38,
+   "dropped": 0,
+   "bytes": 503628,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "kernAccidentalsFixed:326",
+    "splitMeasures",
+    "transposedToSounding"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.74
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.79
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "Corno 1 in B (basso)",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -14,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       -14
+      ]
+     ],
+     "reason": "pitch-class evidence (0.89 vs 0.08 for expected +0)",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Corno 2 in B (basso)",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -14,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       -14
+      ]
+     ],
+     "reason": "pitch-class evidence (0.86 vs 0.06 for expected +0)",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Tromba 1 in B",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Tromba 2 in B",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Timpani in B, F",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       626.0,
+       -12
+      ]
+     ],
+     "reason": "coincides with the cello (median diff +0): octave down",
+     "pcRateAfter": 0.95
+    }
+   ]
+  },
+  {
+   "workId": "haydn-103",
+   "movement": 1,
+   "file": "sym103a.krn",
+   "measures": 230,
+   "excerpts": 28,
+   "dropped": 0,
+   "bytes": 598882,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "splitMeasures"
+   ],
+   "parts": [
+    {
+     "label": "Flauti 1 & 2",
+     "inst": "flute",
+     "name": "Flöte",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Clarinetto 1 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Clarinetto 2 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    },
+    {
+     "label": "Corno 1 in Eb",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Corno 2 in Eb",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Tromba 1 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "Tromba 2 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Timpani in Eb, Bb",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       685.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    }
+   ]
+  },
+  {
+   "workId": "haydn-103",
+   "movement": 2,
+   "file": "sym103b.krn",
+   "measures": 207,
+   "excerpts": 24,
+   "dropped": 0,
+   "bytes": 434493,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "splitMeasures",
+    "tuplets"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.78
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.79
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.83
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Corno 1 in C (basso)",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Corno 2 in C (basso)",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Tromba 1 in C",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Tromba 2 in C",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Timpani in C, G",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Violino Solo",
+     "inst": "violin",
+     "name": "Violine (Solo)",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino I ripieno",
+     "inst": "violin",
+     "name": "Violine I (ripieno)",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       396.5,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.99
+    }
+   ]
+  },
+  {
+   "workId": "haydn-103",
+   "movement": 3,
+   "file": "sym103c.krn",
+   "measures": 84,
+   "excerpts": 10,
+   "dropped": 0,
+   "bytes": 116974,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "emptyMeasureDropped",
+    "splitMeasures"
+   ],
+   "parts": [
+    {
+     "label": "Flauti 1 & 2",
+     "inst": "flute",
+     "name": "Flöte",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.99
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "Clarinetto 1 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Clarinetto 2 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Corno 1 in Eb",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "Corno 2 in Eb",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Tromba 1 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Tromba 2 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Timpani in Eb, Bb",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       240.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "haydn-103",
+   "movement": 4,
+   "file": "sym103d.krn",
+   "measures": 386,
+   "excerpts": 48,
+   "dropped": 0,
+   "bytes": 662350,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Clarinetto 1 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Clarinetto 2 in Bb",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Corno 1 in Eb",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Corno 2 in Eb",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Tromba 1 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Tromba 2 in Eb",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Timpani in Eb, Bb",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1544.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "haydn-104",
+   "movement": 1,
+   "file": "sym104a.krn",
+   "measures": 295,
+   "excerpts": 36,
+   "dropped": 0,
+   "bytes": 614933,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Clarinetto 1 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Clarinetto 2 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Corno 1 in D",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Corno 2 in D",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Tromba 1 in D",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Tromba 2 in D",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Timpani in D, A",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1177.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "haydn-104",
+   "movement": 2,
+   "file": "sym104b.krn",
+   "measures": 152,
+   "excerpts": 18,
+   "dropped": 0,
+   "bytes": 285555,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "tuplets",
+    "unnumberedMeasures"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.74
+    },
+    {
+     "label": "Clarinetto 1 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    },
+    {
+     "label": "Clarinetto 2 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    },
+    {
+     "label": "Corno 1 in G",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "Corno 2 in G",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Tromba 1 in D",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "Tromba 2 in D",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "Timpani in D, A",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       304.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "haydn-104",
+   "movement": 3,
+   "file": "sym104c.krn",
+   "measures": 109,
+   "excerpts": 12,
+   "dropped": 0,
+   "bytes": 158327,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "splitMeasures"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Clarinetto 1 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Clarinetto 2 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.74
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Corno 1 in D",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    },
+    {
+     "label": "Corno 2 in D",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Tromba 1 in D",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    },
+    {
+     "label": "Tromba 2 in D",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "Timpani in D, A",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.6
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       312.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "haydn-104",
+   "movement": 4,
+   "file": "sym104d.krn",
+   "measures": 338,
+   "excerpts": 42,
+   "dropped": 0,
+   "bytes": 627887,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "tuplets"
+   ],
+   "parts": [
+    {
+     "label": "Flauto 1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Flauto 2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Oboe 1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Oboe 2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "Clarinetto 1 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Clarinetto 2 in A",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "Fagotto 1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "Fagotto 2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "Corno 1 in D",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "Corno 2 in D",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "Tromba 1 in D",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.83
+    },
+    {
+     "label": "Tromba 2 in D",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "Timpani in D, A",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "Violino I",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violino II",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "Contrabasso",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1352.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.96
+    }
+   ]
+  },
+  {
+   "workId": "mozart-41",
+   "movement": 1,
+   "file": "sheet.xml",
+   "measures": 313,
+   "excerpts": 39,
+   "dropped": 0,
+   "bytes": 732719,
+   "repeatsCollapsed": [
+    {
+     "kind": "firstPass",
+     "firstMeasure": 1,
+     "lastMeasure": 120,
+     "measures": 120,
+     "quarters": 480.0
+    }
+   ],
+   "flags": [
+    "chordsSplit",
+    "graceNotesRemoved",
+    "transposedToSounding",
+    "tuplets",
+    "writtenOutRepeatsCollapsed"
+   ],
+   "parts": [
+    {
+     "label": "flute",
+     "inst": "flute",
+     "name": "Flöte",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "oboe1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "oboe2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "bassoon1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.84
+    },
+    {
+     "label": "bassoon2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "horn1",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.83
+    },
+    {
+     "label": "horn2",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "horn3",
+     "inst": "horn",
+     "name": "Horn 3",
+     "layers": 0,
+     "shift": -7,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       -7
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "horn4",
+     "inst": "horn",
+     "name": "Horn 4",
+     "layers": 0,
+     "shift": -7,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       -7
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "piccolotrumpet1",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "piccolotrumpet2",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.78
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       1252.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "mozart-41",
+   "movement": 2,
+   "file": "sheet.xml",
+   "measures": 101,
+   "excerpts": 12,
+   "dropped": 0,
+   "bytes": 318064,
+   "repeatsCollapsed": [
+    {
+     "kind": "firstPass",
+     "firstMeasure": 1,
+     "lastMeasure": 44,
+     "measures": 44,
+     "quarters": 132.0
+    }
+   ],
+   "flags": [
+    "chordsSplit",
+    "transposedToSounding",
+    "tuplets",
+    "writtenOutRepeatsCollapsed"
+   ],
+   "parts": [
+    {
+     "label": "flute",
+     "inst": "flute",
+     "name": "Flöte",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "oboe1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.68
+    },
+    {
+     "label": "oboe2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.73
+    },
+    {
+     "label": "bassoon1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.68
+    },
+    {
+     "label": "bassoon2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.52
+    },
+    {
+     "label": "horn1",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 0,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "horn2",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 0,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "horn3",
+     "inst": "horn",
+     "name": "Horn 3",
+     "layers": 1,
+     "shift": -7,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       -7
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.5
+    },
+    {
+     "label": "horn4",
+     "inst": "horn",
+     "name": "Horn 4",
+     "layers": 1,
+     "shift": -7,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       -7
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.53
+    },
+    {
+     "label": "piccolotrumpet1",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 0,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "piccolotrumpet2",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 0,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 0,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       303.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 1.0
+    }
+   ]
+  },
+  {
+   "workId": "mozart-41",
+   "movement": 3,
+   "file": "sheet.xml",
+   "measures": 87,
+   "excerpts": 10,
+   "dropped": 0,
+   "bytes": 132025,
+   "repeatsCollapsed": [
+    {
+     "kind": "firstPass",
+     "firstMeasure": 1,
+     "lastMeasure": 16,
+     "measures": 16,
+     "quarters": 48.0
+    },
+    {
+     "kind": "firstPass",
+     "firstMeasure": 33,
+     "lastMeasure": 75,
+     "measures": 43,
+     "quarters": 129.0
+    },
+    {
+     "kind": "firstPass",
+     "firstMeasure": 60,
+     "lastMeasure": 67,
+     "measures": 8,
+     "quarters": 24.0
+    },
+    {
+     "kind": "firstPass",
+     "firstMeasure": 76,
+     "lastMeasure": 95,
+     "measures": 20,
+     "quarters": 60.0
+    }
+   ],
+   "flags": [
+    "chordsSplit",
+    "transposedToSounding",
+    "writtenOutRepeatsCollapsed"
+   ],
+   "parts": [
+    {
+     "label": "flute",
+     "inst": "flute",
+     "name": "Flöte",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    },
+    {
+     "label": "oboe1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.9
+    },
+    {
+     "label": "oboe2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "bassoon1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.91
+    },
+    {
+     "label": "bassoon2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.98
+    },
+    {
+     "label": "horn1",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.66
+    },
+    {
+     "label": "horn2",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.65
+    },
+    {
+     "label": "horn3",
+     "inst": "horn",
+     "name": "Horn 3",
+     "layers": 0,
+     "shift": -7,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       -7
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "horn4",
+     "inst": "horn",
+     "name": "Horn 4",
+     "layers": 0,
+     "shift": -7,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       -7
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "piccolotrumpet1",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "piccolotrumpet2",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.72
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.57
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       261.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    }
+   ]
+  },
+  {
+   "workId": "mozart-41",
+   "movement": 4,
+   "file": "sheet.xml",
+   "measures": 423,
+   "excerpts": 53,
+   "dropped": 0,
+   "bytes": 818217,
+   "repeatsCollapsed": [
+    {
+     "kind": "firstPass",
+     "firstMeasure": 1,
+     "lastMeasure": 157,
+     "measures": 157,
+     "quarters": 628.0
+    },
+    {
+     "kind": "firstPass",
+     "firstMeasure": 315,
+     "lastMeasure": 513,
+     "measures": 199,
+     "quarters": 796.0
+    }
+   ],
+   "flags": [
+    "chordsSplit",
+    "graceNotesRemoved",
+    "transposedToSounding",
+    "tuplets",
+    "writtenOutRepeatsCollapsed"
+   ],
+   "parts": [
+    {
+     "label": "flute",
+     "inst": "flute",
+     "name": "Flöte",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.73
+    },
+    {
+     "label": "oboe1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.72
+    },
+    {
+     "label": "oboe2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "bassoon1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "bassoon2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "horn1",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "horn2",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.79
+    },
+    {
+     "label": "horn3",
+     "inst": "horn",
+     "name": "Horn 3",
+     "layers": 0,
+     "shift": -7,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       -7
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "horn4",
+     "inst": "horn",
+     "name": "Horn 4",
+     "layers": 0,
+     "shift": -7,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       -7
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "piccolotrumpet1",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.78
+    },
+    {
+     "label": "piccolotrumpet2",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.83
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       1692.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.99
+    }
+   ]
+  },
+  {
+   "workId": "beethoven-9",
+   "movement": 1,
+   "file": "sheet.xml",
+   "measures": 547,
+   "excerpts": 68,
+   "dropped": 0,
+   "bytes": 1964518,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "graceNotesRemoved",
+    "transposedToSounding",
+    "tuplets"
+   ],
+   "parts": [
+    {
+     "label": "flute1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.69
+    },
+    {
+     "label": "flute2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "oboe1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.68
+    },
+    {
+     "label": "oboe2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "clarinet1",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 2,
+     "shift": -2,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       -2
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.69
+    },
+    {
+     "label": "clarinet2",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": -2,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       -2
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.69
+    },
+    {
+     "label": "bassoon1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "bassoon2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "horn12",
+     "inst": "horn",
+     "name": "Horn",
+     "layers": 2,
+     "shift": -10,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       -10
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.64
+    },
+    {
+     "label": "horn34",
+     "inst": "horn",
+     "name": "Horn",
+     "layers": 2,
+     "shift": -14,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       -14
+      ]
+     ],
+     "reason": "BB horn read as basso (an octave below the encoded transposition)",
+     "pcRateAfter": 0.6
+    },
+    {
+     "label": "trumpet12",
+     "inst": "trumpet",
+     "name": "Trompete",
+     "layers": 4,
+     "shift": 2,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       2
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.52
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.51
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 4,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 4,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 4,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 4,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1094.0,
+       0
+      ]
+     ],
+     "reason": "encoded an octave below the cello (median diff +12): no octave shift",
+     "pcRateAfter": 0.92
+    }
+   ]
+  },
+  {
+   "workId": "beethoven-9",
+   "movement": 2,
+   "file": "sheet.xml",
+   "measures": 562,
+   "excerpts": 71,
+   "dropped": 0,
+   "bytes": 1028926,
+   "repeatsCollapsed": [
+    {
+     "kind": "firstPass",
+     "firstMeasure": 7,
+     "lastMeasure": 148,
+     "measures": 142,
+     "quarters": 426.0
+    },
+    {
+     "kind": "firstPass",
+     "firstMeasure": 298,
+     "lastMeasure": 538,
+     "measures": 241,
+     "quarters": 723.0
+    },
+    {
+     "kind": "firstPass",
+     "firstMeasure": 814,
+     "lastMeasure": 882,
+     "measures": 69,
+     "quarters": 276.0
+    },
+    {
+     "kind": "daCapo+daCapo",
+     "firstMeasure": 991,
+     "lastMeasure": 1274,
+     "measures": 284,
+     "quarters": 852.0
+    },
+    {
+     "kind": "daCapo",
+     "firstMeasure": 1286,
+     "lastMeasure": 1401,
+     "measures": 116,
+     "quarters": 348.0
+    }
+   ],
+   "flags": [
+    "chordsSplit",
+    "transposedToSounding",
+    "tuplets",
+    "twoPlayerStaff:bassoon",
+    "twoPlayerStaff:clarinet",
+    "twoPlayerStaff:flute",
+    "twoPlayerStaff:oboe",
+    "twoPlayerStaff:trumpet",
+    "writtenOutRepeatsCollapsed"
+   ],
+   "parts": [
+    {
+     "label": "flute",
+     "inst": "flute",
+     "name": "Flöte",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.65
+    },
+    {
+     "label": "oboe",
+     "inst": "oboe",
+     "name": "Oboe",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.61
+    },
+    {
+     "label": "clarinet",
+     "inst": "clarinet",
+     "name": "Klarinette",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.6
+    },
+    {
+     "label": "bassoon",
+     "inst": "bassoon",
+     "name": "Fagott",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.58
+    },
+    {
+     "label": "horn12",
+     "inst": "horn",
+     "name": "Horn",
+     "layers": 2,
+     "shift": -10,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       -10
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.67
+    },
+    {
+     "label": "horn34",
+     "inst": "horn",
+     "name": "Horn",
+     "layers": 2,
+     "shift": -14,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       -14
+      ]
+     ],
+     "reason": "BB horn read as basso (an octave below the encoded transposition)",
+     "pcRateAfter": 0.73
+    },
+    {
+     "label": "trumpet",
+     "inst": "trumpet",
+     "name": "Trompete",
+     "layers": 2,
+     "shift": 2,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       2
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "trombone12",
+     "inst": "trombone",
+     "name": "Altposaune",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.64
+    },
+    {
+     "label": "trombone3",
+     "inst": "trombone",
+     "name": "Bassposaune 3",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.49
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1826.0,
+       0
+      ]
+     ],
+     "reason": "encoded an octave below the cello (median diff +12): no octave shift",
+     "pcRateAfter": 0.88
+    }
+   ]
+  },
+  {
+   "workId": "beethoven-9",
+   "movement": 3,
+   "file": "sheet.xml",
+   "measures": 157,
+   "excerpts": 19,
+   "dropped": 0,
+   "bytes": 540556,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "graceNotesRemoved",
+    "transposedToSounding",
+    "tuplets",
+    "twoPlayerStaff:bassoon",
+    "twoPlayerStaff:clarinet",
+    "twoPlayerStaff:flute",
+    "twoPlayerStaff:oboe",
+    "twoPlayerStaff:trumpet"
+   ],
+   "parts": [
+    {
+     "label": "flute",
+     "inst": "flute",
+     "name": "Flöte",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.6
+    },
+    {
+     "label": "oboe",
+     "inst": "oboe",
+     "name": "Oboe",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.62
+    },
+    {
+     "label": "clarinet",
+     "inst": "clarinet",
+     "name": "Klarinette",
+     "layers": 2,
+     "shift": -2,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       -2
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.62
+    },
+    {
+     "label": "bassoon",
+     "inst": "bassoon",
+     "name": "Fagott",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.65
+    },
+    {
+     "label": "horn12",
+     "inst": "horn",
+     "name": "Horn",
+     "layers": 2,
+     "shift": -14,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       -14
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "horn34",
+     "inst": "horn",
+     "name": "Horn",
+     "layers": 2,
+     "shift": -9,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       -9
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "trumpet",
+     "inst": "trumpet",
+     "name": "Trompete",
+     "layers": 2,
+     "shift": -2,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       -2
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       710.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.97
+    }
+   ]
+  },
+  {
+   "workId": "beethoven-9",
+   "movement": 4,
+   "file": "sheet.xml",
+   "measures": 919,
+   "excerpts": 115,
+   "dropped": 3,
+   "bytes": 2843352,
+   "repeatsCollapsed": [
+    {
+     "kind": "firstPass",
+     "firstMeasure": 97,
+     "lastMeasure": 104,
+     "measures": 8,
+     "quarters": 32.0
+    },
+    {
+     "kind": "firstPass",
+     "firstMeasure": 559,
+     "lastMeasure": 574,
+     "measures": 16,
+     "quarters": 48.0
+    }
+   ],
+   "flags": [
+    "chordsSplit",
+    "graceNotesRemoved",
+    "sectionalTransposition:clarinet",
+    "sectionalTransposition:horn34",
+    "skippedPart:bassdrum",
+    "skippedPart:cymbal",
+    "skippedPart:triangle",
+    "transposedToSounding",
+    "tuplets",
+    "twoPlayerStaff:bassoon",
+    "twoPlayerStaff:basstrombone",
+    "twoPlayerStaff:clarinet",
+    "twoPlayerStaff:flute",
+    "twoPlayerStaff:oboe",
+    "twoPlayerStaff:trombone",
+    "twoPlayerStaff:trumpet",
+    "writtenOutRepeatsCollapsed"
+   ],
+   "parts": [
+    {
+     "label": "piccolo",
+     "inst": "flute",
+     "name": "Piccolo",
+     "layers": 2,
+     "shift": 12,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "flute",
+     "inst": "flute",
+     "name": "Flöte",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.67
+    },
+    {
+     "label": "oboe",
+     "inst": "oboe",
+     "name": "Oboe",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.64
+    },
+    {
+     "label": "clarinet",
+     "inst": "clarinet",
+     "name": "Klarinette",
+     "layers": 2,
+     "shift": -2,
+     "sections": [
+      [
+       0.0,
+       272.0,
+       -2
+      ],
+      [
+       272.0,
+       1167.0,
+       -3
+      ],
+      [
+       1167.0,
+       2051.0,
+       -2
+      ],
+      [
+       2051.0,
+       3216.0,
+       -3
+      ],
+      [
+       3216.0,
+       3276.0,
+       -2
+      ],
+      [
+       3276.0,
+       3632.0,
+       -3
+      ]
+     ],
+     "reason": "expected; sectional: 0-272:-2, 272-1199:-3, 1199-2131:-2, 2131-3296:-3, 3296-3356:-2, 3356-3712:-3",
+     "pcRateAfter": 0.69
+    },
+    {
+     "label": "bassoon",
+     "inst": "bassoon",
+     "name": "Fagott",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "contrabassoon",
+     "inst": "bassoon",
+     "name": "Kontrafagott",
+     "layers": 2,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "horn12",
+     "inst": "horn",
+     "name": "Horn",
+     "layers": 2,
+     "shift": -10,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       -10
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.62
+    },
+    {
+     "label": "horn34",
+     "inst": "horn",
+     "name": "Horn",
+     "layers": 2,
+     "shift": -14,
+     "sections": [
+      [
+       0.0,
+       2273.0,
+       -14
+      ],
+      [
+       2273.0,
+       3244.0,
+       -10
+      ],
+      [
+       3244.0,
+       3276.0,
+       -14
+      ],
+      [
+       3276.0,
+       3632.0,
+       -10
+      ]
+     ],
+     "reason": "expected; sectional: 0-2353:-14, 2353-3324:-10, 3324-3356:-14, 3356-3712:-10",
+     "pcRateAfter": 0.73
+    },
+    {
+     "label": "trumpet",
+     "inst": "trumpet",
+     "name": "Trompete",
+     "layers": 2,
+     "shift": 2,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       2
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.62
+    },
+    {
+     "label": "trombone",
+     "inst": "trombone",
+     "name": "Altposaune",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "basstrombone",
+     "inst": "trombone",
+     "name": "Bassposaune",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.63
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 4,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 4,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 4,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 2,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "sopranosolo",
+     "inst": "choir",
+     "name": "Sopran (Solo)",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.39
+    },
+    {
+     "label": "altosolo",
+     "inst": "choir",
+     "name": "Alt (Solo)",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.39
+    },
+    {
+     "label": "tenorsolo",
+     "inst": "choir",
+     "name": "Tenor (Solo)",
+     "layers": 2,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.35
+    },
+    {
+     "label": "baritonesolo",
+     "inst": "choir",
+     "name": "Bariton (Solo)",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.72
+    },
+    {
+     "label": "sopranochoir",
+     "inst": "choir",
+     "name": "Sopran (Chor)",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "altochoir",
+     "inst": "choir",
+     "name": "Alt (Chor)",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "tenorchoir",
+     "inst": "choir",
+     "name": "Tenor (Chor)",
+     "layers": 2,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.78
+    },
+    {
+     "label": "basschoir",
+     "inst": "choir",
+     "name": "Bass (Chor)",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       3632.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    }
+   ]
+  },
+  {
+   "workId": "dvorak-9",
+   "movement": 1,
+   "file": "sheet.xml",
+   "measures": 500,
+   "excerpts": 63,
+   "dropped": 0,
+   "bytes": 1024365,
+   "repeatsCollapsed": [
+    {
+     "kind": "daCapo",
+     "firstMeasure": 223,
+     "lastMeasure": 327,
+     "measures": 105,
+     "quarters": 210.0
+    }
+   ],
+   "flags": [
+    "chordsSplit",
+    "graceNotesRemoved",
+    "sectionalTransposition:horn3",
+    "sectionalTransposition:trumpet1",
+    "transposedToSounding",
+    "tuplets",
+    "writtenOutRepeatsCollapsed"
+   ],
+   "parts": [
+    {
+     "label": "flute1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "flute2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.78
+    },
+    {
+     "label": "oboe1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.7
+    },
+    {
+     "label": "oboe2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "clarinet1",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": -3,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       -3
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.74
+    },
+    {
+     "label": "clarinet2",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": -3,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       -3
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "bassoon1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "bassoon2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "horn1",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.85
+    },
+    {
+     "label": "horn2",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "horn3",
+     "inst": "horn",
+     "name": "Horn 3",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       894.0,
+       -12
+      ],
+      [
+       894.0,
+       1000.0,
+       -8
+      ]
+     ],
+     "reason": "expected; sectional: 0-1104:-12, 1104-1210:-8",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "horn4",
+     "inst": "horn",
+     "name": "Horn 4",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.87
+    },
+    {
+     "label": "trumpet1",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       46.0,
+       0
+      ],
+      [
+       46.0,
+       360.0,
+       4
+      ],
+      [
+       360.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "pitch-class evidence (0.66 vs 0.44 for expected +4); sectional: 0-46:+0, 46-360:+4, 360-1210:+0",
+     "pcRateAfter": 0.7
+    },
+    {
+     "label": "trumpet2",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 4,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       4
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.79
+    },
+    {
+     "label": "trombone1",
+     "inst": "trombone",
+     "name": "Posaune 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.83
+    },
+    {
+     "label": "trombone2",
+     "inst": "trombone",
+     "name": "Posaune 2",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "trombone4",
+     "inst": "trombone",
+     "name": "Posaune 4",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.79
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       1000.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    }
+   ]
+  },
+  {
+   "workId": "dvorak-9",
+   "movement": 2,
+   "file": "sheet.xml",
+   "measures": 127,
+   "excerpts": 15,
+   "dropped": 0,
+   "bytes": 293024,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "graceNotesRemoved",
+    "transposedToSounding",
+    "tuplets"
+   ],
+   "parts": [
+    {
+     "label": "flute1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.57
+    },
+    {
+     "label": "flute2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.61
+    },
+    {
+     "label": "oboe1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.59
+    },
+    {
+     "label": "oboe2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.62
+    },
+    {
+     "label": "englishhorn",
+     "inst": "oboe",
+     "name": "Englischhorn",
+     "layers": 3,
+     "shift": -7,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       -7
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.64
+    },
+    {
+     "label": "clarinet1",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 4,
+     "shift": -3,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       -3
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.66
+    },
+    {
+     "label": "clarinet2",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 4,
+     "shift": -2,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       -2
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "bassoon1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "bassoon2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "horn1",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 3,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.59
+    },
+    {
+     "label": "horn2",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.67
+    },
+    {
+     "label": "horn3",
+     "inst": "horn",
+     "name": "Horn 3",
+     "layers": 2,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.22
+    },
+    {
+     "label": "horn4",
+     "inst": "horn",
+     "name": "Horn 4",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.8
+    },
+    {
+     "label": "trumpet1",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 2,
+     "shift": 4,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       4
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "trumpet2",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 4,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       4
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.89
+    },
+    {
+     "label": "trombone1",
+     "inst": "trombone",
+     "name": "Posaune 1",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    },
+    {
+     "label": "trombone2",
+     "inst": "trombone",
+     "name": "Posaune 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.92
+    },
+    {
+     "label": "trombone3",
+     "inst": "trombone",
+     "name": "Posaune 3",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "tuba",
+     "inst": "tuba",
+     "name": "Tuba",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.67
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 4,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       506.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    }
+   ]
+  },
+  {
+   "workId": "dvorak-9",
+   "movement": 3,
+   "file": "sheet.xml",
+   "measures": 301,
+   "excerpts": 37,
+   "dropped": 0,
+   "bytes": 510950,
+   "repeatsCollapsed": [
+    {
+     "kind": "firstPass",
+     "firstMeasure": 2,
+     "lastMeasure": 60,
+     "measures": 59,
+     "quarters": 177.0
+    },
+    {
+     "kind": "firstPass",
+     "firstMeasure": 235,
+     "lastMeasure": 249,
+     "measures": 15,
+     "quarters": 45.0
+    },
+    {
+     "kind": "firstPass",
+     "firstMeasure": 267,
+     "lastMeasure": 313,
+     "measures": 47,
+     "quarters": 141.0
+    },
+    {
+     "kind": "daCapo",
+     "firstMeasure": 370,
+     "lastMeasure": 428,
+     "measures": 59,
+     "quarters": 177.0
+    },
+    {
+     "kind": "daCapo",
+     "firstMeasure": 430,
+     "lastMeasure": 510,
+     "measures": 81,
+     "quarters": 243.0
+    }
+   ],
+   "flags": [
+    "chordsSplit",
+    "graceNotesRemoved",
+    "skippedPart:triangle",
+    "transposedToSounding",
+    "tuplets",
+    "writtenOutRepeatsCollapsed"
+   ],
+   "parts": [
+    {
+     "label": "flute1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.58
+    },
+    {
+     "label": "flute2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.6
+    },
+    {
+     "label": "oboe1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.58
+    },
+    {
+     "label": "oboe2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.57
+    },
+    {
+     "label": "clarinet1",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": -3,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       -3
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.53
+    },
+    {
+     "label": "clarinet2",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": -3,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       -3
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.54
+    },
+    {
+     "label": "bassoon1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    },
+    {
+     "label": "bassoon2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.7
+    },
+    {
+     "label": "horn1",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.76
+    },
+    {
+     "label": "horn2",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.74
+    },
+    {
+     "label": "horn3",
+     "inst": "horn",
+     "name": "Horn 3",
+     "layers": 2,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.72
+    },
+    {
+     "label": "horn4",
+     "inst": "horn",
+     "name": "Horn 4",
+     "layers": 2,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.74
+    },
+    {
+     "label": "trumpet1",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 2,
+     "shift": 4,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       4
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "trumpet2",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 0,
+     "shift": 4,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       4
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.82
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 4,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 2,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       903.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.81
+    }
+   ]
+  },
+  {
+   "workId": "dvorak-9",
+   "movement": 4,
+   "file": "sheet.xml",
+   "measures": 348,
+   "excerpts": 43,
+   "dropped": 0,
+   "bytes": 1001897,
+   "repeatsCollapsed": [],
+   "flags": [
+    "chordsSplit",
+    "graceNotesRemoved",
+    "skippedPart:cymbal",
+    "transposedToSounding",
+    "tuplets"
+   ],
+   "parts": [
+    {
+     "label": "flute1",
+     "inst": "flute",
+     "name": "Flöte 1",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.62
+    },
+    {
+     "label": "flute2",
+     "inst": "flute",
+     "name": "Flöte 2",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.49
+    },
+    {
+     "label": "oboe1",
+     "inst": "oboe",
+     "name": "Oboe 1",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.71
+    },
+    {
+     "label": "oboe2",
+     "inst": "oboe",
+     "name": "Oboe 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.72
+    },
+    {
+     "label": "clarinet1",
+     "inst": "clarinet",
+     "name": "Klarinette 1",
+     "layers": 1,
+     "shift": -3,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       -3
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.67
+    },
+    {
+     "label": "clarinet2",
+     "inst": "clarinet",
+     "name": "Klarinette 2",
+     "layers": 1,
+     "shift": -2,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       -2
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.75
+    },
+    {
+     "label": "bassoon1",
+     "inst": "bassoon",
+     "name": "Fagott 1",
+     "layers": 2,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.86
+    },
+    {
+     "label": "bassoon2",
+     "inst": "bassoon",
+     "name": "Fagott 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "horn1",
+     "inst": "horn",
+     "name": "Horn 1",
+     "layers": 1,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.74
+    },
+    {
+     "label": "horn2",
+     "inst": "horn",
+     "name": "Horn 2",
+     "layers": 1,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.77
+    },
+    {
+     "label": "horn3",
+     "inst": "horn",
+     "name": "Horn 3",
+     "layers": 1,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.67
+    },
+    {
+     "label": "horn4",
+     "inst": "horn",
+     "name": "Horn 4",
+     "layers": 1,
+     "shift": -8,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       -8
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.72
+    },
+    {
+     "label": "trumpet1",
+     "inst": "trumpet",
+     "name": "Trompete 1",
+     "layers": 1,
+     "shift": 4,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       4
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.65
+    },
+    {
+     "label": "trumpet2",
+     "inst": "trumpet",
+     "name": "Trompete 2",
+     "layers": 1,
+     "shift": 4,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       4
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.73
+    },
+    {
+     "label": "trombone1",
+     "inst": "trombone",
+     "name": "Posaune 1",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.93
+    },
+    {
+     "label": "trombone2",
+     "inst": "trombone",
+     "name": "Posaune 2",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.88
+    },
+    {
+     "label": "trombone3",
+     "inst": "trombone",
+     "name": "Posaune 3",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.94
+    },
+    {
+     "label": "timpani",
+     "inst": "timpani",
+     "name": "Pauken",
+     "layers": 1,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.78
+    },
+    {
+     "label": "violin1",
+     "inst": "violin",
+     "name": "Violine I",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violin2",
+     "inst": "violin",
+     "name": "Violine II",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "viola",
+     "inst": "viola",
+     "name": "Viola",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "reference",
+     "pcRateAfter": null
+    },
+    {
+     "label": "violoncello",
+     "inst": "cello",
+     "name": "Violoncello",
+     "layers": 3,
+     "shift": 0,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       0
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": null
+    },
+    {
+     "label": "doublebass",
+     "inst": "contrabass",
+     "name": "Kontrabass",
+     "layers": 1,
+     "shift": -12,
+     "sections": [
+      [
+       0.0,
+       1392.0,
+       -12
+      ]
+     ],
+     "reason": "expected",
+     "pcRateAfter": 0.95
+    }
+   ]
+  }
+ ],
+ "generated": "2026-11-04 01:08",
+ "music21": "10.5.0"
+}
