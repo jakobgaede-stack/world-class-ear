@@ -1,5 +1,16 @@
 // Sampler: lädt die Instrument-Samples (OGG je MIDI-Ton) und spielt Töne mit Hüllkurve, Pitch-Shift und Pegel.
 import { getCtx, getMaster, dbToGain, unlockAudio } from './context.js';
+import { makeSpatial, wireReverb } from './space.js';
+import { state } from '../engine/state.js';
+
+let reverbWired = false;
+function outputFor(ctx, inst, opts) {
+  const bus = getMaster();
+  if (!reverbWired) { try { wireReverb(bus); } catch (e) {} reverbWired = true; }
+  const sp = makeSpatial(ctx, inst, opts);
+  sp.connect(bus);
+  return sp.input;
+}
 
 const BASE = 'assets/samples/';
 let manifest = null;
@@ -118,7 +129,7 @@ export function playNote(o) {
   const dur = o.dur ?? 1;
   const gainDb = o.gainDb ?? 0;
   const release = o.release ?? 0.12;
-  const out = getMaster();
+  const out = outputFor(ctx, o.inst, { pan: o.pan ?? null, voiceIndex: o.voiceIndex || 0, voices: o.voices || 1 });
   const g = ctx.createGain();
   g.connect(out);
   const peak = dbToGain(gainDb) * (o.gain ?? 1);
@@ -149,7 +160,8 @@ export function playNote(o) {
   const buf = map.get(sm);
   const src = ctx.createBufferSource();
   src.buffer = buf;
-  src.playbackRate.value = Math.pow(2, (o.midi - sm) / 12);
+  const cents = o.detune || 0;
+  src.playbackRate.value = Math.pow(2, (o.midi - sm) / 12 + cents / 1200);
   src.connect(g);
   const isShort = art !== 'sus';
   const sampleLen = buf.duration / src.playbackRate.value;
@@ -197,10 +209,14 @@ export function playEvents(events, { lead = 0.08 } = {}) {
   const t0 = ctx.currentTime + lead;
   let last = 0;
   const handles = [];
-  for (const e of events) {
-    handles.push(playNote({ ...e, when: t0 + e.t }));
+  const human = state.settings.humanize !== false;
+  const n = events.length;
+  events.forEach((e, i) => {
+    const jitter = human ? (Math.random() - 0.5) * 0.014 : 0;
+    const detune = human ? (Math.random() - 0.5) * 7 : 0;
+    handles.push(playNote({ ...e, when: t0 + e.t + Math.max(0, jitter + 0.007), detune: e.detune ?? detune, voiceIndex: e.voiceIndex ?? i, voices: e.voices ?? n }));
     last = Math.max(last, e.t + (e.dur ?? 1) + 0.2);
-  }
+  });
   let timer;
   const done = new Promise((res) => {
     timer = setTimeout(res, (last + lead) * 1000);

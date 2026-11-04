@@ -1,5 +1,6 @@
 // Ansichten: Heute (Tageslektion), Üben (frei), Statistik, Wissen, Einstellungen.
 import { el } from '../modules/common.js';
+import { worksOverview } from '../data/orchestra.js';
 import { state, saveState, exportJson, importJson, todayKey } from '../engine/state.js';
 import { SKILLS, SKILL_BY_ID, FAMILY_DE, FAMILY_ORDER, skillsOfFamily } from '../engine/skills.js';
 import { skillStats, currentStageIndex, recentAccuracy, topConfusions, overdueDays } from '../engine/rating.js';
@@ -265,7 +266,47 @@ export function viewSettings(container) {
   }
   hold.addEventListener('change', () => { state.settings.holdMode = hold.value; saveState(); });
   field('Akkorde halten bis zur Antwort', hold);
+  const space = el('select', { class: 'select', style: 'width:auto;margin:0' });
+  for (const [v, t] of [['stereo', 'Stereo (Sitzordnung)'], ['hrtf', '3D für Kopfhörer (HRTF)'], ['mono', 'Mono']]) {
+    const o = el('option', { value: v, text: t });
+    if ((state.settings.space || 'stereo') === v) o.setAttribute('selected', 'selected');
+    space.appendChild(o);
+  }
+  space.addEventListener('change', () => { state.settings.space = space.value; saveState(); });
+  field('Räumlichkeit', space);
+  const rev = el('input', { type: 'range', min: 0, max: 0.6, step: 0.02, value: state.settings.reverb ?? 0.28 });
+  rev.addEventListener('input', () => { state.settings.reverb = Number(rev.value); saveState(); });
+  field('Hall (Saal)', rev);
+  const hum = el('input', { type: 'checkbox' });
+  if (state.settings.humanize !== false) hum.setAttribute('checked', 'checked');
+  hum.addEventListener('change', () => { state.settings.humanize = hum.checked; saveState(); });
+  field('Leichte Unschärfe in Einsatz und Stimmung (natürlicher)', hum);
+  const auto = el('input', { type: 'checkbox' });
+  if (state.settings.autoplay !== false) auto.setAttribute('checked', 'checked');
+  auto.addEventListener('change', () => { state.settings.autoplay = auto.checked; saveState(); });
+  field('Intervalle und Akkorde automatisch abspielen (Fehlerhören und Diktat starten immer von Hand)', auto);
+  const sol = el('select', { class: 'select', style: 'width:auto;margin:0' });
+  for (const [v, t] of [['la', 'la-basiert (Tonika = la, Leitton = si)'], ['do', 'do-basiert (Tonika = do, me/le/te)']]) {
+    const o = el('option', { value: v, text: t });
+    if ((state.settings.solfegeMinor || 'la') === v) o.setAttribute('selected', 'selected');
+    sol.appendChild(o);
+  }
+  sol.addEventListener('change', () => { state.settings.solfegeMinor = sol.value; saveState(); });
+  field('Solmisation in Moll (Blattsingen)', sol);
   container.appendChild(box);
+  const lit = el('div', { class: 'panel' });
+  lit.appendChild(el('h3', { text: 'Orchesterliteratur' }));
+  const litInfo = el('p', { class: 'small muted', text: 'lade …' });
+  lit.appendChild(litInfo);
+  worksOverview().then((ws) => {
+    litInfo.textContent = '';
+    const tbl = el('table', { class: 'stats' });
+    tbl.appendChild(el('tr', {}, [el('th', { text: 'Werk' }), el('th', { text: 'Sätze' }), el('th', { text: 'Ausschnitte' }), el('th', { text: 'Verfügbar' })]));
+    for (const w of ws) tbl.appendChild(el('tr', {}, [el('td', { text: w.title }), el('td', { text: String(w.movements) }), el('td', { text: String(w.excerpts) }), el('td', { text: w.available ? 'ja' : 'nur mit Sync-Schlüssel (lizenzierte Notendaten, private Weitergabe)' })]));
+    lit.appendChild(tbl);
+    lit.appendChild(el('p', { class: 'small muted', text: 'Alle Werke klingend notiert, Stimmen monophon aufgeteilt. Weitere Werke (Mozart 39/40, Haydn-Reste, Beethoven 1–8, Schubert …) folgen, sobald brauchbare freie Notendaten vorliegen.' }));
+  }).catch((e) => { litInfo.textContent = 'Literaturindex nicht ladbar: ' + e.message; });
+  container.appendChild(lit);
   const sync = el('div', { class: 'panel' });
   sync.appendChild(el('h3', { text: 'Sync zwischen Geräten' }));
   sync.appendChild(el('p', { class: 'small muted', text: 'Gib auf jedem Gerät denselben Sync-Schlüssel ein (mindestens 6 Zeichen, frei wählbar). Der Fortschritt wird dann automatisch zusammengeführt; Ablage: Cloudflare D1, kostenloser Tarif.' }));

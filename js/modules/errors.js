@@ -63,7 +63,7 @@ function injectOne(ex, parts, kind, partIdx, usedIdx) {
   const part = parts[partIdx];
   const notes = part.notes;
   const pcs = keyPcs(ex);
-  const [rlo, rhi] = PART_RANGE[part.name] || [40, 80];
+  const [rlo, rhi] = PART_RANGE[part.name] || part.range || [36, 84];
   // Kandidaten: nicht die erste Note des Ausschnitts (Zählzeit 1), nicht die letzte, Dauer >= 0.5
   const cands = notes
     .map((n, i) => ({ n, i }))
@@ -171,17 +171,23 @@ export function measureOf(ex, t) {
 }
 
 /** Choralausschnitt als Ereignisse. gains: dB je Stimme. */
+const DYN_DB = { ppp: -14, pp: -10, p: -6, mp: -3, mf: 0, f: 3, ff: 6, fff: 8, fp: 3, sf: 4, sfz: 4, fz: 4 };
+
 export function choraleEvents(ex, parts, ensembleId, { bpm = 66, gains = null, insts = null } = {}) {
   const spb = 60 / bpm;
-  const partInsts = insts || assignParts(ensembleId, parts.map((p) => {
+  const partInsts = insts || (parts.every((p) => p.inst) ? parts.map((p) => p.inst) : assignParts(ensembleId, parts.map((p) => {
     const ms = p.notes.map((n) => n.m);
     return { lo: Math.min(...ms), hi: Math.max(...ms) };
-  }));
+  })));
   const events = [];
   parts.forEach((p, pi) => {
-    const inst = partInsts[pi];
+    let inst = partInsts[pi];
+    let artBase = 'sus';
+    if (inst === 'timpani') { inst = 'contrabass'; artBase = 'pizz'; }
     let last = null;
+    let dynDb = 0;
     for (const n of p.notes) {
+      if (n.dyn && DYN_DB[n.dyn] !== undefined) dynDb = DYN_DB[n.dyn];
       if (n.silent) { last = null; continue; }
       const t = (n.o - ex.start) * spb;
       const fermataFactor = n.fermata ? 1.6 : 1;
@@ -192,7 +198,8 @@ export function choraleEvents(ex, parts, ensembleId, { bpm = 66, gains = null, i
       }
       if (n.staccato) dur = Math.min(dur, 0.18);
       else dur = Math.max(0.12, dur - 0.04);
-      const e = { inst, art: n.staccato ? 'stac' : 'sus', midi: n.m, t, dur, gainDb: (gains ? gains[pi] || 0 : 0) + (n.gainDb || 0) };
+      const short = artBase === 'pizz' || n.staccato || (n.d * spb < 0.22);
+      const e = { inst, art: artBase === 'pizz' ? 'pizz' : short ? 'stac' : 'sus', midi: n.m, t, dur, gainDb: (gains ? gains[pi] || 0 : 0) + (n.gainDb || 0) + dynDb };
       events.push(e);
       last = e;
     }
@@ -255,6 +262,7 @@ function buildItem(skillId, stages, stageIndex, { single } = {}) {
       title,
       hint: `${nameLine} · ${ensembleName(ens)} · ${stage.model ? 'zuerst die korrekte Fassung, dann die Fassung mit Fehler' : 'ein Durchgang'} · ${stage.nErr[0] === 0 ? 'auch fehlerfrei möglich' : nErr + (nErr === 1 ? ' Fehler' : ' Fehler')}`,
       replays: 0,
+      manualStart: true,
       knowledge: 'error:' + (errors[0]?.kind || 'none'),
       model: stage.model,
       async load(p) { await preload(allEvents, p); },
@@ -471,4 +479,4 @@ export const SKILLS = [
   },
 ];
 
-export { PART_DE };
+export { PART_DE, PART_RANGE, injectOne, cloneParts, partWeight };

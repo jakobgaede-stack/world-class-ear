@@ -1,5 +1,5 @@
 // Service Worker: Samples, Choräle und Code offline verfügbar halten.
-const VERSION = 'wce-v3';
+const VERSION = 'wce-v4';
 const CORE = ['./', './index.html', './css/app.css', './js/main.js', './vendor/vexflow-bravura.js', './assets/samples/manifest.json', './assets/chorales/index.json'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));

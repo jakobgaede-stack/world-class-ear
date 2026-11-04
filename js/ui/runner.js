@@ -98,7 +98,7 @@ export function runBlock(container, block, { onProgress } = {}) {
       let playedAt = 0;
       let played = 0;
       const playBtn = el('button', { class: 'btn play', text: '▶ Abspielen' });
-      const replayInfo = el('span', { class: 'muted small', text: replays ? `${replays}× Wiederholung möglich` : 'ein Durchgang' });
+      const replayInfo = el('span', { class: 'muted small', text: replays >= 99 ? 'beliebig oft wiederholbar' : replays ? `${replays}× Wiederholung möglich` : 'ein Durchgang' });
       const doPlay = () => {
         if (playing && playing.hold) {
           // Halten läuft: Taste stoppt
@@ -108,7 +108,7 @@ export function runBlock(container, block, { onProgress } = {}) {
           return;
         }
         if (played > 0 && replays <= 0 && !(item.holdable)) return;
-        if (played > 0 && !item.holdable) { replays--; replayInfo.textContent = replays ? `${replays}× Wiederholung möglich` : 'keine Wiederholung mehr'; }
+        if (played > 0 && !item.holdable) { replays--; replayInfo.textContent = replays >= 98 ? 'beliebig oft wiederholbar' : replays ? `${replays}× Wiederholung möglich` : 'keine Wiederholung mehr'; }
         played++;
         if (playing) playing.stop();
         playing = item.play();
@@ -150,7 +150,8 @@ export function runBlock(container, block, { onProgress } = {}) {
         if (onProgress) onProgress(i + 1, block.items);
         renderFeedback(skill, item, res, answerBox);
       });
-      setTimeout(doPlay, 350);
+      if (item.manualStart || state.settings.autoplay === false) playBtn.textContent = '▶ Start';
+      else setTimeout(doPlay, 350);
     };
 
     const renderFeedback = (skill, item, res, answerBox) => {

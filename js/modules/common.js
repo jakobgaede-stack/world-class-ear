@@ -31,6 +31,8 @@ export function chordEvents(midis, ensembleId, { art = 'sus', dur = 3, gains = n
     t,
     dur,
     gainDb: (v.gainDb || 0) + (gains ? gains[Math.min(i, gains.length - 1)] || 0 : 0),
+    voiceIndex: i,
+    voices: voices.length,
   }));
 }
 
@@ -69,36 +71,18 @@ export function playChord(events, { stageHold = false } = {}) {
 
 export { stopAll };
 
-/** Kadenz I-IV-V-I in einer Tonart (vierstimmig, enge Lage) */
+/** Kadenz I–IV–V7–I in vierstimmigem Satz mit korrekter Stimmführung (Vorlage in C, transponiert). */
 export function cadenceChords(tonic, { minor = false, bassTarget = 48 } = {}) {
-  const maj = (r) => [r, r + 4, r + 7];
-  const min = (r) => [r, r + 3, r + 7];
-  const I = minor ? min(tonic) : maj(tonic);
-  const IV = minor ? min(tonic + 5) : maj(tonic + 5);
-  const V = maj(tonic + 7);
-  const V7 = [tonic + 7, tonic + 11, tonic + 14, tonic + 17];
-  const toVoicing = (pcs, bass) => {
-    // Bass = Grundton, drei Oberstimmen eng über dem Bass + Oktave
-    const root = pcs[0];
-    let b = bassTarget + ((((root % 12) + 12) % 12 - (((bassTarget % 12) + 12) % 12) + 12) % 12);
-    if (b - bassTarget > 6) b -= 12;
-    const upper = pcs.slice(1).concat(pcs.length === 3 ? [pcs[0]] : []);
-    const out = [b];
-    let prev = b + 7;
-    for (const p of upper) {
-      let m = prev + ((((p % 12) + 12) % 12 - (((prev % 12) + 12) % 12) + 12) % 12);
-      if (m === prev) m += 12;
-      out.push(m);
-      prev = m;
-    }
-    return out.sort((a, c) => a - c);
-  };
-  return [
-    { midis: toVoicing(I), dur: 0.7 },
-    { midis: toVoicing(IV), dur: 0.7 },
-    { midis: toVoicing(V7), dur: 0.7 },
-    { midis: toVoicing(I), dur: 1.1 },
-  ];
+  // Vorlage (MIDI relativ zu C3 = 48): Bass, Tenor, Alt, Sopran
+  const T = minor
+    ? [[48, 63, 67, 72], [53, 65, 68, 72], [55, 65, 67, 71], [48, 63, 67, 72]] // i, iv, V7, i
+    : [[48, 64, 67, 72], [53, 65, 69, 72], [55, 65, 67, 71], [48, 64, 67, 72]]; // I, IV, V7, I
+  let shift = ((tonic - 0) % 12 + 12) % 12;
+  if (shift > 6) shift -= 12;
+  const target = bassTarget - 48;
+  const oct = Math.round((target - shift) / 12) * 12;
+  const durs = [0.7, 0.7, 0.7, 1.1];
+  return T.map((chord, i) => ({ midis: chord.map((m) => m + shift + oct), dur: durs[i] }));
 }
 
 /**

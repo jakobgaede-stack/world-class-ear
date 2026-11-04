@@ -7,6 +7,7 @@ import { assignParts, ensembleName } from '../audio/ensembles.js';
 import { pick } from '../theory/pitch.js';
 import { stopAll } from '../audio/sampler.js';
 import { state } from '../engine/state.js';
+import { passiveOrchestra } from '../modules/orchestra.js';
 
 const ENS = ['choir', 'organ', 'strings', 'woodwinds', 'brass', 'mixed'];
 
@@ -24,19 +25,35 @@ export function runPassive(container, block) {
     let stopped = false;
     container._stop = () => { stopped = true; stopAll(); resolve({ answers: 0, score: 0, deltas: {}, stopped: true }); };
     const total = block.phrases || 4;
+    let turn = 0;
     while (done < total && !stopped) {
       const nPh = Math.min(2, total - done);
+      let events;
+      let orch = null;
+      body.innerHTML = '';
+      if (turn % 2 === 1) {
+        try { orch = await passiveOrchestra(); } catch (e) { console.warn('Orchester nicht verfügbar', e); orch = null; }
+      }
+      turn++;
+      if (orch) {
+        events = orch.events;
+        body.appendChild(el('h2', { text: `${orch.data.work}` }));
+        body.appendChild(el('div', { class: 'hint', text: `${orch.data.movement}. Satz${orch.data.movementTitle ? ' (' + orch.data.movementTitle + ')' : ''} · Takt ${orch.data.measureFrom}–${orch.data.measureTo} · ${orch.act.length} Stimmen, klingend notiert · ${Math.round(orch.bpm)} bpm` }));
+        const box = el('div', { class: 'score-box' });
+        body.appendChild(box);
+        try { renderExcerpt(box, orch.ex, { parts: orch.act, partLabels: true, staffGap: 78, maxWidth: Math.min(body.clientWidth || 900, 1200) }); } catch (e) { console.error(e); }
+      } else {
       const chorale = await randomChorale((c) => c.nPhrases >= nPh);
       const span = randomPhraseSpan(chorale, nPh);
       const ex = excerpt(chorale, span.start, span.end);
       const ens = pick(ENS);
-      const events = choraleEvents(ex, ex.parts, ens, { bpm: state.settings.bpmChorale || 66 });
-      body.innerHTML = '';
+      events = choraleEvents(ex, ex.parts, ens, { bpm: state.settings.bpmChorale || 66 });
       body.appendChild(el('h2', { text: `${chorale.title}` }));
       body.appendChild(el('div', { class: 'hint', text: `BWV ${chorale.bwv} · Riemenschneider ${chorale.riemenschneider} · ${ensembleName(ens)} · ${ex.key.label} · Phrase ${span.phraseIndex + 1}${nPh > 1 ? '–' + (span.phraseIndex + nPh) : ''} von ${chorale.phrases.length}` }));
       const box = el('div', { class: 'score-box' });
       body.appendChild(box);
       try { renderExcerpt(box, ex, { maxWidth: Math.min(body.clientWidth || 900, 1100) }); } catch (e) { console.error(e); }
+      }
       const row = el('div', { class: 'controls' });
       let handle = null;
       const again = el('button', { class: 'btn', text: '▶ Nochmal', onclick: () => { if (handle) handle.stop(); handle = play(events); } });

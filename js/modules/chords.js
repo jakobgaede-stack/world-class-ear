@@ -5,6 +5,23 @@ import { pick, randInt, pcName, pcNameEn, midiToHelmholtz, shuffle } from '../th
 import { ensembleName } from '../audio/ensembles.js';
 import { chordEvents, preload, play, playChord, answerGrid, multiAnswer, el, randomRegisterBass, REGISTER_DE } from './common.js';
 
+/** Alle (Typ, Umkehrung)-Deutungen, die dieselbe Tonklassenmenge mit demselben Basston ergeben (für symmetrische und sus-Akkorde). */
+function equivalentReadings(midis, candidateTypeIds) {
+  const pcs = new Set(midis.map((m) => ((m % 12) + 12) % 12));
+  const bassPc = ((midis[0] % 12) + 12) % 12;
+  const out = [];
+  for (const id of candidateTypeIds) {
+    const t = CHORD_BY_ID[id];
+    if (!t || t.iv.length !== pcs.size) continue;
+    for (let root = 0; root < 12; root++) {
+      const set = new Set(t.iv.map((x) => (root + x) % 12));
+      if (set.size !== pcs.size || [...pcs].some((x) => !set.has(x))) continue;
+      for (let inv = 0; inv < t.iv.length; inv++) if ((root + t.iv[inv]) % 12 === bassPc) out.push({ type: id, inv, root });
+    }
+  }
+  return out;
+}
+
 const E_PIANO = ['piano'];
 const E_HOMO = ['strings', 'woodwinds', 'brass'];
 const E_MIXED = ['strings', 'woodwinds', 'brass', 'mixed'];
@@ -133,11 +150,14 @@ function makeChordSkill(id, def) {
           else multiAnswer(container, groups, submit);
         },
         evaluate(answer) {
-          const typeOk = answer.type === truth;
+          const readings = equivalentReadings(midis, stage.types);
+          const typeOk = answer.type === truth || readings.some((r) => r.type === answer.type);
           let score = typeOk ? 1 : 0;
           let extra = '';
+          const alt = readings.filter((r) => r.type !== truth || r.inv !== truthInv);
+          const altNote = alt.length ? ' · gleichwertig: ' + [...new Set(alt.map((r) => `${CHORD_BY_ID[r.type].sym || CHORD_BY_ID[r.type].de} (${INVERSION_DE[r.inv] || r.inv})`))].join(', ') : '';
           if (stage.askInv) {
-            const invOk = String(truthInv) === answer.inv;
+            const invOk = readings.some((r) => r.type === answer.type && String(r.inv) === answer.inv) || (answer.type === truth && String(truthInv) === answer.inv);
             score = (typeOk ? 0.7 : 0) + (invOk ? 0.3 : 0);
             extra = invOk ? '' : ' · Umkehrung falsch';
           }
@@ -152,7 +172,7 @@ function makeChordSkill(id, def) {
             correct: score >= 0.999,
             truthKey: truth,
             answerKey: answer.type,
-            truthLabel: describe() + ' · ' + midis.map((m) => midiToHelmholtz(m, { flats })).join(' '),
+            truthLabel: describe() + ' · ' + midis.map((m) => midiToHelmholtz(m, { flats })).join(' ') + altNote,
             answerLabel: (at ? at.de : answer.type) + (stage.askInv && answer.inv !== undefined ? ', ' + INVERSION_DE[Number(answer.inv)] : '') + extra,
             playTruth: () => play(events),
             playAnswer: at && !typeOk
@@ -210,7 +230,7 @@ const polySkill = {
       stageIndex,
       diff: stage.diff + ([1, 6, 11].includes(dist) ? 4 : 0),
       title: 'Polyakkord',
-      hint: `${ens === 'split' ? 'Blech unten, Holz oben' : ensembleName(ens)} · zwei Einheiten benennen (oben über unten)`,
+      hint: `${ens === 'split' ? 'Blech unten, Holz oben' : ensembleName(ens)} · tiefster Ton: ${pcNameEn(lowerRoot, { flats })} (Grundton der unteren Einheit) · beide Einheiten benennen`,
       replays: stageIndex < 2 ? 1 : 0,
       knowledge: 'chord:poly',
       async load(p) { await preload(events, p); },
