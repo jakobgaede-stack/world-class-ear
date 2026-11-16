@@ -8,6 +8,7 @@ import { planLesson, saveLesson, todaysLesson, lessonSummary } from '../engine/l
 import { runBlock, blockSummary, runPassive, stageLabel, showCard } from './runner.js';
 import { allCards } from '../knowledge/cards.js';
 import { setMasterVolume } from '../audio/context.js';
+import { npActive } from '../audio/sampler.js';
 import { ENSEMBLES } from '../audio/ensembles.js';
 import { pull, push, syncStatus, syncEnabled } from '../engine/sync.js';
 
@@ -274,6 +275,14 @@ export function viewSettings(container) {
   }
   space.addEventListener('change', () => { state.settings.space = space.value; saveState(); });
   field('Räumlichkeit', space);
+  const snd = el('select', { class: 'select', style: 'width:auto;margin:0' });
+  for (const [v, t] of [['noteperformer', 'NotePerformer (privat, mit Sync-Schlüssel)'], ['vsco', 'VSCO-2 (frei)']]) {
+    const o = el('option', { value: v, text: t });
+    if ((state.settings.soundSet || 'noteperformer') === v) o.setAttribute('selected', 'selected');
+    snd.appendChild(o);
+  }
+  snd.addEventListener('change', async () => { state.settings.soundSet = snd.value; await saveState(); location.reload(); });
+  field('Klänge' + (state.settings.soundSet !== 'vsco' && !npActive() ? ' (NotePerformer braucht einen Sync-Schlüssel)' : ''), snd);
   const rev = el('input', { type: 'range', min: 0, max: 0.6, step: 0.02, value: state.settings.reverb ?? 0.28 });
   rev.addEventListener('input', () => { state.settings.reverb = Number(rev.value); saveState(); });
   field('Hall (Saal)', rev);
@@ -322,6 +331,7 @@ export function viewSettings(container) {
     status.textContent = 'hole …';
     const ok = await pull();
     if (ok) { status.textContent = 'schicke …'; await push(); }
+    if ((state.settings.soundSet || 'noteperformer') === 'noteperformer' && !npActive()) { status.textContent += ' · lade NotePerformer-Klänge …'; setTimeout(() => location.reload(), 800); }
   } }));
   srow.appendChild(el('button', { class: 'btn ghost', text: 'Sync aus', onclick: () => { state.settings.syncKey = ''; saveState(); keyIn.value = ''; status.textContent = 'aus'; } }));
   srow.appendChild(status);

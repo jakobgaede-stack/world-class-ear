@@ -13,7 +13,43 @@ function outputFor(ctx, inst, opts) {
 }
 
 const BASE = 'assets/samples/';
+const NP_URL = 'https://world-class-ear-sync.jakobgaede.workers.dev/np/';
+const NP_CACHE = 'wce-np-1';
 let manifest = null;
+let npInfo = null; // Manifest der privaten NotePerformer-Bibliothek, wenn aktiv
+
+/** Klangbibliothek: 'noteperformer' (privat, braucht Sync-Schlüssel) oder 'vsco' (frei). */
+export function soundSet() {
+  const key = state.settings.syncKey || '';
+  const want = state.settings.soundSet || 'noteperformer';
+  return want === 'noteperformer' && key.length >= 6 ? 'noteperformer' : 'vsco';
+}
+
+async function npFetch(name) {
+  const url = NP_URL + name;
+  let cache = null;
+  try { cache = await caches.open(NP_CACHE); } catch (e) { cache = null; }
+  if (cache) {
+    const hit = await cache.match(url);
+    if (hit) return hit.arrayBuffer();
+  }
+  const res = await fetch(url, { headers: { 'X-WCE-Key': state.settings.syncKey || '' } });
+  if (!res.ok) throw new Error('NotePerformer-Klänge nicht ladbar (' + res.status + ')');
+  const buf = await res.arrayBuffer();
+  if (cache) { try { await cache.put(url, new Response(buf.slice(0), { headers: { 'Content-Type': res.headers.get('Content-Type') || 'application/octet-stream' } })); } catch (e) {} }
+  return buf;
+}
+
+/** Bündel zerlegen: 'WCEB' + uint32 Kopf-Länge + JSON-Kopf + OGG-Daten */
+function parseBundle(buf) {
+  const dv = new DataView(buf);
+  const magic = String.fromCharCode(dv.getUint8(0), dv.getUint8(1), dv.getUint8(2), dv.getUint8(3));
+  if (magic !== 'WCEB') throw new Error('Ungültiges Klangbündel');
+  const hl = dv.getUint32(4, true);
+  const head = JSON.parse(new TextDecoder().decode(new Uint8Array(buf, 8, hl)));
+  const base = 8 + hl;
+  return head.notes.map(([midi, off, len]) => ({ midi, data: buf.slice(base + off, base + off + len) }));
+}
 const buffers = new Map(); // 'inst/art' -> Map(midi -> AudioBuffer)
 const pending = new Map();
 const active = new Set();
@@ -22,8 +58,24 @@ export async function loadManifest() {
   if (!manifest) {
     const res = await fetch(BASE + 'manifest.json');
     manifest = await res.json();
+    if (soundSet() === 'noteperformer') {
+      try {
+        npInfo = JSON.parse(new TextDecoder().decode(await npFetch('manifest')));
+        for (const [inst, info] of Object.entries(npInfo.instruments)) {
+          const base = manifest.instruments[inst];
+          manifest.instruments[inst] = { ...info, np: true, range: base ? base.range : info.range, playingRange: base ? base.playingRange : info.playingRange };
+        }
+      } catch (e) {
+        console.warn('NotePerformer-Klänge nicht verfügbar, verwende VSCO:', e.message);
+        npInfo = null;
+      }
+    }
   }
   return manifest;
+}
+
+export function npActive() {
+  return !!npInfo;
 }
 
 export function getManifest() {
@@ -39,10 +91,18 @@ export function hasArticulation(inst, art) {
   return !!(info && info.articulations[art]);
 }
 
+/** Artikulation eines Ereignisses inklusive Dynamikschicht (leise gehaltene Töne aus der p-Aufnahme). */
+export function artFor(e) {
+  const a = resolveArt(e.inst, e.art || 'sus');
+  if (a === 'sus' && (e.gainDb ?? 0) <= -5 && hasArticulation(e.inst, 'sus_p')) return 'sus_p';
+  return a;
+}
+
 /** Artikulation mit Fallback: stac/pizz -> sus wenn nicht vorhanden. */
 export function resolveArt(inst, art) {
   if (inst === 'sine') return 'sus';
   if (hasArticulation(inst, art)) return art;
+  if (art === 'sus_p') return 'sus';
   if (art === 'pizz' && hasArticulation(inst, 'stac')) return 'stac';
   return 'sus';
 }
@@ -58,6 +118,25 @@ export async function loadInstrument(inst, art = 'sus', onProgress) {
   if (!info) throw new Error('Unbekanntes Instrument: ' + inst);
   const notes = info.articulations[realArt].notes;
   const ctx = getCtx();
+  if (info.np) {
+    const pn = (async () => {
+      const parts = parseBundle(await npFetch(info.articulations[realArt].bundle));
+      const map = new Map();
+      let done = 0;
+      await Promise.all(parts.map(async (x) => {
+        try { map.set(x.midi, await ctx.decodeAudioData(x.data)); } catch (e) { console.warn('NP-Ton nicht dekodierbar', inst, realArt, x.midi); }
+        done++;
+        if (onProgress) onProgress(done / parts.length);
+      }));
+      if (map.size === 0) throw new Error(`Keine Klänge für ${inst} (${realArt}).`);
+      buffers.set(key, map);
+      pending.delete(key);
+      return map;
+    })();
+    pending.set(key, pn);
+    pn.catch(() => pending.delete(key));
+    return pn;
+  }
   const p = (async () => {
     const map = new Map();
     let done = 0;
@@ -93,7 +172,8 @@ export async function loadInstrument(inst, art = 'sus', onProgress) {
 
 /** Alle Instrumente einer Liste laden (für ein Item), mit Gesamtfortschritt. */
 export async function loadAll(list, onProgress) {
-  const uniq = [...new Set(list.map((x) => x.inst + '/' + resolveArt(x.inst, x.art || 'sus')))];
+  await loadManifest();
+  const uniq = [...new Set(list.filter((x) => x.inst !== 'sine').map((x) => x.inst + '/' + artFor(x)))];
   let done = 0;
   await Promise.all(
     uniq.map(async (key) => {
@@ -150,8 +230,9 @@ export function playNote(o) {
     active.add(h);
     return h;
   }
-  const art = resolveArt(o.inst, o.art || 'sus');
-  const map = buffers.get(o.inst + '/' + art);
+  let art = artFor(o);
+  let map = buffers.get(o.inst + '/' + art);
+  if (!map && art === 'sus_p') { art = 'sus'; map = buffers.get(o.inst + '/sus'); }
   if (!map) {
     console.warn('Instrument nicht geladen:', o.inst, art);
     return { stop() {} };
@@ -163,7 +244,7 @@ export function playNote(o) {
   const cents = o.detune || 0;
   src.playbackRate.value = Math.pow(2, (o.midi - sm) / 12 + cents / 1200);
   src.connect(g);
-  const isShort = art !== 'sus';
+  const isShort = art === 'stac' || art === 'pizz';
   const sampleLen = buf.duration / src.playbackRate.value;
   g.gain.setValueAtTime(peak, when);
   let end;

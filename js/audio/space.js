@@ -22,6 +22,10 @@ export const SEATING = {
   piano: { pan: 0, depth: 1.0 },
   organ: { pan: 0, depth: 2.5 },
   choir: { pan: 0, depth: 2.4 },
+  choir_s: { pan: -0.4, depth: 2.4 },
+  choir_a: { pan: -0.15, depth: 2.5 },
+  choir_t: { pan: 0.15, depth: 2.5 },
+  choir_b: { pan: 0.4, depth: 2.4 },
   sine: { pan: 0, depth: 1.0 },
 };
 

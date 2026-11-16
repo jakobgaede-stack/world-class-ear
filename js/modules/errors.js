@@ -1,4 +1,5 @@
 // Modul Fehlerhören: Melodie (eine Stimme), Akkord, Choral (vier Stimmen, mit Partitur).
+import { hasArticulation } from '../audio/sampler.js';
 import { randomChorale, randomPhraseSpan, excerpt, soundingPcs } from '../data/chorales.js';
 import { renderExcerpt } from '../notation/score.js';
 import { assignParts, ensembleName } from '../audio/ensembles.js';
@@ -183,7 +184,7 @@ export function choraleEvents(ex, parts, ensembleId, { bpm = 66, gains = null, i
   parts.forEach((p, pi) => {
     let inst = partInsts[pi];
     let artBase = 'sus';
-    if (inst === 'timpani') { inst = 'contrabass'; artBase = 'pizz'; }
+    if (inst === 'timpani' && !hasArticulation('timpani', 'sus')) { inst = 'contrabass'; artBase = 'pizz'; }
     let last = null;
     let dynDb = 0;
     for (const n of p.notes) {

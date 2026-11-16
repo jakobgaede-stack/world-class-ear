@@ -53,11 +53,25 @@ function fromFamily(list, midi, preferredIdx) {
  * @param {string} art 'sus' | 'stac' | 'pizz'
  * @returns {Array<{inst:string, art:string, midi:number}>}
  */
+/** Chor: getrennte Stimmen (Sopran, Alt, Tenor, Bass), wenn die Bibliothek sie hat, sonst Mischklang. */
+const CHOIR_VOICES = [['choir_s', 64], ['choir_a', 57], ['choir_t', 50], ['choir_b', -1]];
+function choirFor(center) {
+  if (!hasArticulation('choir_s', 'sus')) return 'choir';
+  return CHOIR_VOICES.find(([, min]) => center >= min)[0];
+}
+
 export function assignVoices(ensembleId, midis, art = 'sus') {
   const n = midis.length;
   const out = [];
   if (ensembleId === 'sine') return midis.map((midi) => ({ inst: 'sine', art: 'sus', midi }));
-  if (ensembleId === 'piano' || ensembleId === 'organ' || ensembleId === 'choir') {
+  if (ensembleId === 'choir') {
+    if (n === 4 && hasArticulation('choir_s', 'sus')) {
+      const satb = ['choir_b', 'choir_t', 'choir_a', 'choir_s'];
+      return midis.map((midi, i) => ({ inst: satb[i], art: 'sus', midi: clampToRange(satb[i], midi) }));
+    }
+    return midis.map((midi) => { const inst = choirFor(midi); return { inst, art: 'sus', midi: clampToRange(inst, midi) }; });
+  }
+  if (ensembleId === 'piano' || ensembleId === 'organ') {
     const inst = ensembleId;
     return midis.map((midi) => ({ inst, art: 'sus', midi: clampToRange(inst, midi) }));
   }
@@ -105,7 +119,8 @@ function clampToRange(inst, midi) {
 
 /** Besetzung für eine einzelne Melodiestimme */
 export function soloInstrument(ensembleId, midiLo, midiHi) {
-  if (ensembleId === 'sine' || ensembleId === 'piano' || ensembleId === 'organ' || ensembleId === 'choir') return ensembleId;
+  if (ensembleId === 'choir') return choirFor((midiLo + midiHi) / 2);
+  if (ensembleId === 'sine' || ensembleId === 'piano' || ensembleId === 'organ') return ensembleId;
   const list = ensembleId === 'mixed' || ensembleId === 'orchestra' ? MELODIC : ENSEMBLES[ensembleId].insts;
   const cands = list.filter((inst) => inRange(inst, midiLo) && inRange(inst, midiHi));
   return cands.length ? pick(cands) : fromFamily(list, Math.round((midiLo + midiHi) / 2), list.length - 1);
@@ -124,7 +139,16 @@ export { hasArticulation };
  */
 export function assignParts(ensembleId, partRanges) {
   const n = partRanges.length;
-  if (['sine', 'piano', 'organ', 'choir'].includes(ensembleId)) return partRanges.map(() => ensembleId);
+  if (ensembleId === 'choir') {
+    if (n === 4 && hasArticulation('choir_s', 'sus')) {
+      const order = partRanges.map((r, i) => ({ i, c: (r.lo + r.hi) / 2 })).sort((a, b) => b.c - a.c);
+      const out = new Array(4);
+      order.forEach((o, k) => { out[o.i] = CHOIR_VOICES[k][0]; });
+      return out;
+    }
+    return partRanges.map((r) => choirFor((r.lo + r.hi) / 2));
+  }
+  if (['sine', 'piano', 'organ'].includes(ensembleId)) return partRanges.map(() => ensembleId);
   const covers = (inst, r) => { const [lo, hi] = range(inst); return r.lo >= lo && r.hi <= hi; };
   const coverage = (inst, r) => { const [lo, hi] = range(inst); const o = Math.min(hi, r.hi) - Math.max(lo, r.lo); return o / (r.hi - r.lo + 1); };
   const pickFrom = (list, r, prefIdx) => {

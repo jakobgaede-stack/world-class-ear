@@ -74,16 +74,19 @@ function mergeInto(target, src) {
 
 export function saveState() {
   clearTimeout(saveTimer);
-  saveTimer = setTimeout(async () => {
-    const snapshot = JSON.parse(JSON.stringify(state));
-    try {
-      if (db) await idbSet(KEY, snapshot);
-      else localStorage.setItem(KEY, JSON.stringify(snapshot));
-    } catch (e) {
-      console.warn('Speichern fehlgeschlagen', e);
-    }
-    for (const fn of listeners) fn(state);
-  }, 300);
+  return new Promise((resolve) => {
+    saveTimer = setTimeout(async () => {
+      const snapshot = JSON.parse(JSON.stringify(state));
+      try {
+        if (db) await idbSet(KEY, snapshot);
+        else localStorage.setItem(KEY, JSON.stringify(snapshot));
+      } catch (e) {
+        console.warn('Speichern fehlgeschlagen', e);
+      }
+      for (const fn of listeners) fn(state);
+      resolve();
+    }, 300);
+  });
 }
 
 export function onChange(fn) {
